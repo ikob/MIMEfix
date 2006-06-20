@@ -1,0 +1,1114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		F118227A09AE965200EBF3AD /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = F118227909AE965200EBF3AD /* base64.c */; };
+		F118228909AE97CF00EBF3AD /* NSPreferences_MIMEfix.m in Sources */ = {isa = PBXBuildFile; fileRef = F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */; };
+		F118229409AE984B00EBF3AD /* MIMEPart_FixMime.m in Sources */ = {isa = PBXBuildFile; fileRef = F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */; };
+		F16CDC9009AF20ED0013A434 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16CDC8F09AF20ED0013A434 /* Defaults.plist */; };
+		F16CDCFA09AF2A380013A434 /* MIMEfix.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F16CDCF909AF2A380013A434 /* MIMEfix.tiff */; };
+		F1E2BF5009AD74FA00DA6872 /* JMUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */; };
+		F1E2BF5109AD74FA00DA6872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4D09AD74FA00DA6872 /* main.m */; };
+		F1E2BF5209AD74FA00DA6872 /* MIMEfixbundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */; };
+		F1FF552709ADF53300EC55CB /* MIMEfixPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */; };
+		F1FF558209AE133500EC55CB /* MIMEfixPreference.nib in Resources */ = {isa = PBXBuildFile; fileRef = F1FF558109AE133500EC55CB /* MIMEfixPreference.nib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA420018CDE011CA2923 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		014CEA430018CDE011CA2923 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* MIMEfix_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEfix_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* MIMEfix.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIMEfix.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		F118227809AE965200EBF3AD /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		F118227909AE965200EBF3AD /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		F118228709AE97CF00EBF3AD /* NSPreferences_MIMEfix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSPreferences_MIMEfix.h; sourceTree = "<group>"; };
+		F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPreferences_MIMEfix.m; sourceTree = "<group>"; };
+		F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEPart_FixMime.h; sourceTree = "<group>"; };
+		F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMEPart_FixMime.m; sourceTree = "<group>"; };
+		F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = text.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		F16CDCF909AF2A380013A434 /* MIMEfix.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MIMEfix.tiff; sourceTree = "<group>"; };
+		F193D15D09ADC3B600A49216 /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NSPreferences.h; sourceTree = "<group>"; };
+		F1E2BF4B09AD74FA00DA6872 /* JMUtilities.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = JMUtilities.h; sourceTree = "<group>"; };
+		F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.objc; path = JMUtilities.m; sourceTree = "<group>"; };
+		F1E2BF4D09AD74FA00DA6872 /* main.m */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1E2BF4E09AD74FA00DA6872 /* MIMEfixbundle.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MIMEfixbundle.h; sourceTree = "<group>"; };
+		F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.objc; path = MIMEfixbundle.m; sourceTree = "<group>"; };
+		F1E2BF6409AD757600DA6872 /* _AttachmentQueueEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _AttachmentQueueEntry.h; sourceTree = "<group>"; };
+		F1E2BF6509AD757600DA6872 /* _AutosizingClipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _AutosizingClipView.h; sourceTree = "<group>"; };
+		F1E2BF6609AD757600DA6872 /* Account-MailUIExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Account-MailUIExtras.h"; sourceTree = "<group>"; };
+		F1E2BF6709AD757600DA6872 /* AccountDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountDetails.h; sourceTree = "<group>"; };
+		F1E2BF6809AD757600DA6872 /* AccountPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountPreferences.h; sourceTree = "<group>"; };
+		F1E2BF6909AD757600DA6872 /* ActivityViewEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewEntry.h; sourceTree = "<group>"; };
+		F1E2BF6A09AD757600DA6872 /* ActivityViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewer.h; sourceTree = "<group>"; };
+		F1E2BF6B09AD757600DA6872 /* AddressAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressAttachment.h; sourceTree = "<group>"; };
+		F1E2BF6C09AD757600DA6872 /* AddressAttachmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressAttachmentCell.h; sourceTree = "<group>"; };
+		F1E2BF6D09AD757600DA6872 /* AddressCommentCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressCommentCommand.h; sourceTree = "<group>"; };
+		F1E2BF6E09AD757600DA6872 /* AddressHistoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressHistoryController.h; sourceTree = "<group>"; };
+		F1E2BF6F09AD757600DA6872 /* AddressLayoutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressLayoutManager.h; sourceTree = "<group>"; };
+		F1E2BF7009AD757600DA6872 /* AddressPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressPicker.h; sourceTree = "<group>"; };
+		F1E2BF7109AD757600DA6872 /* AddressTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressTextField.h; sourceTree = "<group>"; };
+		F1E2BF7209AD757600DA6872 /* ApplescriptEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplescriptEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF7409AD757600DA6872 /* AttachmentLoader-Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttachmentLoader-Internal.h"; sourceTree = "<group>"; };
+		F1E2BF7509AD757600DA6872 /* AttachmentLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttachmentLoader.h; sourceTree = "<group>"; };
+		F1E2BF7609AD757600DA6872 /* AttachmentManager-Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttachmentManager-Internal.h"; sourceTree = "<group>"; };
+		F1E2BF7709AD757600DA6872 /* AttachmentManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttachmentManager.h; sourceTree = "<group>"; };
+		F1E2BF7809AD757600DA6872 /* AttachmentsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttachmentsView.h; sourceTree = "<group>"; };
+		F1E2BF7A09AD757600DA6872 /* AutosizingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutosizingScrollView.h; sourceTree = "<group>"; };
+		F1E2BF7B09AD757600DA6872 /* AutosizingTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutosizingTextField.h; sourceTree = "<group>"; };
+		F1E2BF7C09AD757600DA6872 /* CDStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		F1E2BF7D09AD757600DA6872 /* CertificatePanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertificatePanelController.h; sourceTree = "<group>"; };
+		F1E2BF7E09AD757600DA6872 /* ColorBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorBackgroundView.h; sourceTree = "<group>"; };
+		F1E2BF7F09AD757600DA6872 /* ComposeBackEnd-Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComposeBackEnd-Internal.h"; sourceTree = "<group>"; };
+		F1E2BF8109AD757600DA6872 /* ComposeBackEnd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeBackEnd.h; sourceTree = "<group>"; };
+		F1E2BF8209AD757600DA6872 /* ComposingPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposingPreferences.h; sourceTree = "<group>"; };
+		F1E2BF8309AD757600DA6872 /* ConcreteMessageMall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteMessageMall.h; sourceTree = "<group>"; };
+		F1E2BF8409AD757600DA6872 /* DateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateCell.h; sourceTree = "<group>"; };
+		F1E2BF8509AD757600DA6872 /* DefaultApplicationPopUpButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultApplicationPopUpButton.h; sourceTree = "<group>"; };
+		F1E2BF8609AD757600DA6872 /* DeliveryQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryQueue.h; sourceTree = "<group>"; };
+		F1E2BF8709AD757600DA6872 /* DisclosureButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisclosureButtonCell.h; sourceTree = "<group>"; };
+		F1E2BF8809AD757600DA6872 /* DraggingTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DraggingTextView.h; sourceTree = "<group>"; };
+		F1E2BF8909AD757600DA6872 /* EditingTableColumn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditingTableColumn.h; sourceTree = "<group>"; };
+		F1E2BF8A09AD757600DA6872 /* EmailerEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailerEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF8B09AD757600DA6872 /* EmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF8C09AD757600DA6872 /* EncryptionErrorPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptionErrorPanelController.h; sourceTree = "<group>"; };
+		F1E2BF8D09AD757600DA6872 /* EntourageEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntourageEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF8E09AD757600DA6872 /* EudoraEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EudoraEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF8F09AD757600DA6872 /* ExchangeAccountDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeAccountDetails.h; sourceTree = "<group>"; };
+		F1E2BF9009AD757600DA6872 /* FadingMessageDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FadingMessageDisplay.h; sourceTree = "<group>"; };
+		F1E2BF9109AD757600DA6872 /* FilesystemEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilesystemEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BF9209AD757600DA6872 /* FilteredListInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilteredListInfo.h; sourceTree = "<group>"; };
+		F1E2BF9309AD757600DA6872 /* FindPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPanel.h; sourceTree = "<group>"; };
+		F1E2BF9409AD757600DA6872 /* FlippedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlippedView.h; sourceTree = "<group>"; };
+		F1E2BF9509AD757600DA6872 /* FocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusView.h; sourceTree = "<group>"; };
+		F1E2BF9609AD757600DA6872 /* FontMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontMenu.h; sourceTree = "<group>"; };
+		F1E2BF9709AD757600DA6872 /* FontsAndColorsPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontsAndColorsPreferences.h; sourceTree = "<group>"; };
+		F1E2BF9809AD757600DA6872 /* GeneralPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralPreferences.h; sourceTree = "<group>"; };
+		F1E2BF9A09AD757600DA6872 /* ImagePopUpButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePopUpButtonCell.h; sourceTree = "<group>"; };
+		F1E2BF9B09AD757600DA6872 /* ImageTextFieldAlertTrackingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTextFieldAlertTrackingCell.h; sourceTree = "<group>"; };
+		F1E2BF9C09AD757600DA6872 /* IMAPAccountDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAPAccountDetails.h; sourceTree = "<group>"; };
+		F1E2BF9E09AD757600DA6872 /* Importer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Importer.h; sourceTree = "<group>"; };
+		F1E2BF9F09AD757600DA6872 /* ImportItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportItem.h; sourceTree = "<group>"; };
+		F1E2BFA009AD757600DA6872 /* iToolsAccountDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iToolsAccountDetails.h; sourceTree = "<group>"; };
+		F1E2BFA109AD757600DA6872 /* JunkPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JunkPreferences.h; sourceTree = "<group>"; };
+		F1E2BFA209AD757600DA6872 /* LabelledTextAttachmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelledTextAttachmentCell.h; sourceTree = "<group>"; };
+		F1E2BFA309AD757600DA6872 /* LDAPServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDAPServer.h; sourceTree = "<group>"; };
+		F1E2BFA409AD757600DA6872 /* MailApp-ActivityViewerScripting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ActivityViewerScripting.h"; sourceTree = "<group>"; };
+		F1E2BFA509AD757600DA6872 /* MailApp-AppleScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-AppleScript.h"; sourceTree = "<group>"; };
+		F1E2BFA609AD757600DA6872 /* MailApp-ApplescriptAccountPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptAccountPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFA709AD757600DA6872 /* MailApp-ApplescriptComposingPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptComposingPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFA809AD757600DA6872 /* MailApp-AppleScriptFontsAndColorsPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-AppleScriptFontsAndColorsPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFA909AD757600DA6872 /* MailApp-ApplescriptGeneralPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptGeneralPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFAA09AD757600DA6872 /* MailApp-ApplescriptMailSorterPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptMailSorterPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFAB09AD757600DA6872 /* MailApp-ApplescriptSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptSignature.h"; sourceTree = "<group>"; };
+		F1E2BFAC09AD757600DA6872 /* MailApp-ApplescriptSignaturePreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptSignaturePreferences.h"; sourceTree = "<group>"; };
+		F1E2BFAD09AD757600DA6872 /* MailApp-ApplescriptViewerPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-ApplescriptViewerPreferences.h"; sourceTree = "<group>"; };
+		F1E2BFAE09AD757600DA6872 /* MailApp-MFUserAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailApp-MFUserAgent.h"; sourceTree = "<group>"; };
+		F1E2BFAF09AD757600DA6872 /* MailApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailApp.h; sourceTree = "<group>"; };
+		F1E2BFB009AD757600DA6872 /* MailboxesChooser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailboxesChooser.h; sourceTree = "<group>"; };
+		F1E2BFB109AD757600DA6872 /* MailboxesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailboxesController.h; sourceTree = "<group>"; };
+		F1E2BFB209AD757600DA6872 /* MailboxesOutlineViewOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailboxesOutlineViewOwner.h; sourceTree = "<group>"; };
+		F1E2BFB309AD757600DA6872 /* MailCopyCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailCopyCommand.h; sourceTree = "<group>"; };
+		F1E2BFB409AD757600DA6872 /* MailEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BFB509AD757600DA6872 /* MailMoveCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailMoveCommand.h; sourceTree = "<group>"; };
+		F1E2BFB609AD757600DA6872 /* MailNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailNotificationCenter.h; sourceTree = "<group>"; };
+		F1E2BFB709AD757600DA6872 /* MailSorterPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailSorterPreferences.h; sourceTree = "<group>"; };
+		F1E2BFB809AD757600DA6872 /* MailTextAttachment-CustomAttachmentViewManagement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailTextAttachment-CustomAttachmentViewManagement.h"; sourceTree = "<group>"; };
+		F1E2BFB909AD757600DA6872 /* MailTextAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailTextAttachment.h; sourceTree = "<group>"; };
+		F1E2BFBA09AD757600DA6872 /* MailToCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailToCommand.h; sourceTree = "<group>"; };
+		F1E2BFBB09AD757600DA6872 /* MboxEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MboxEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BFBC09AD757600DA6872 /* Message-Chat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Message-Chat.h"; sourceTree = "<group>"; };
+		F1E2BFBD09AD757600DA6872 /* Message-MailViewerAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Message-MailViewerAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFBE09AD757600DA6872 /* MessageContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageContentController.h; sourceTree = "<group>"; };
+		F1E2BFBF09AD757600DA6872 /* MessageEditor-MessageEditorToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageEditor-MessageEditorToolbar.h"; sourceTree = "<group>"; };
+		F1E2BFC009AD757600DA6872 /* MessageEditor-ScriptingAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageEditor-ScriptingAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFC109AD757600DA6872 /* MessageEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageEditor.h; sourceTree = "<group>"; };
+		F1E2BFC209AD757600DA6872 /* MessageHeaderDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHeaderDisplay.h; sourceTree = "<group>"; };
+		F1E2BFC309AD757600DA6872 /* MessageHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHeaderView.h; sourceTree = "<group>"; };
+		F1E2BFC409AD757600DA6872 /* MessageListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageListCell.h; sourceTree = "<group>"; };
+		F1E2BFC509AD757600DA6872 /* MessageListHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageListHeaderCell.h; sourceTree = "<group>"; };
+		F1E2BFC609AD757600DA6872 /* MessageMall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageMall.h; sourceTree = "<group>"; };
+		F1E2BFC709AD757600DA6872 /* MessagePrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagePrinter.h; sourceTree = "<group>"; };
+		F1E2BFC809AD757600DA6872 /* MessageSaver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageSaver.h; sourceTree = "<group>"; };
+		F1E2BFC909AD757600DA6872 /* MessageTextContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTextContainer.h; sourceTree = "<group>"; };
+		F1E2BFCA09AD757600DA6872 /* MessageTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTextStorage.h; sourceTree = "<group>"; };
+		F1E2BFCB09AD757600DA6872 /* MessageTextView-RichTextConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageTextView-RichTextConversion.h"; sourceTree = "<group>"; };
+		F1E2BFCC09AD757600DA6872 /* MessageTextView-WebAttachmentSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageTextView-WebAttachmentSupport.h"; sourceTree = "<group>"; };
+		F1E2BFCD09AD757600DA6872 /* MessageTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTextView.h; sourceTree = "<group>"; };
+		F1E2BFCE09AD757600DA6872 /* MessageThreadingData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageThreadingData.h; sourceTree = "<group>"; };
+		F1E2BFCF09AD757600DA6872 /* MessageTilingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTilingView.h; sourceTree = "<group>"; };
+		F1E2BFD009AD757600DA6872 /* MessageTransfer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTransfer.h; sourceTree = "<group>"; };
+		F1E2BFD109AD757600DA6872 /* MessageViewer-AppleScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageViewer-AppleScript.h"; sourceTree = "<group>"; };
+		F1E2BFD209AD757600DA6872 /* MessageViewer-MessageViewerToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MessageViewer-MessageViewerToolbar.h"; sourceTree = "<group>"; };
+		F1E2BFD309AD757600DA6872 /* MessageViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewer.h; sourceTree = "<group>"; };
+		F1E2BFD409AD757600DA6872 /* MessageViewerBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewerBox.h; sourceTree = "<group>"; };
+		F1E2BFD509AD757600DA6872 /* MessageViewingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewingState.h; sourceTree = "<group>"; };
+		F1E2BFD609AD757600DA6872 /* MessageWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageWebView.h; sourceTree = "<group>"; };
+		F1E2BFD709AD757600DA6872 /* MouseTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseTracker.h; sourceTree = "<group>"; };
+		F1E2BFD809AD757600DA6872 /* MouseTrackingWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MouseTrackingWindow.h; sourceTree = "<group>"; };
+		F1E2BFD909AD757600DA6872 /* MVComposeAccessoryViewOwner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVComposeAccessoryViewOwner.h; sourceTree = "<group>"; };
+		F1E2BFDA09AD757600DA6872 /* MVMailBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVMailBundle.h; sourceTree = "<group>"; };
+		F1E2BFDB09AD757600DA6872 /* NetscapeEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetscapeEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BFDC09AD757600DA6872 /* NonModalAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NonModalAlert.h; sourceTree = "<group>"; };
+		F1E2BFDD09AD757600DA6872 /* NSAlert-MFErrorSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAlert-MFErrorSupport.h"; sourceTree = "<group>"; };
+		F1E2BFDE09AD757600DA6872 /* NSArray-AtomicAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray-AtomicAddress.h"; sourceTree = "<group>"; };
+		F1E2BFDF09AD757600DA6872 /* NSAttributedString-AtomicAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-AtomicAddress.h"; sourceTree = "<group>"; };
+		F1E2BFE009AD757600DA6872 /* NSClipView-AutosizingScrollViewAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSClipView-AutosizingScrollViewAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFE209AD757600DA6872 /* NSEvent-MailViewerEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSEvent-MailViewerEvent.h"; sourceTree = "<group>"; };
+		F1E2BFE409AD757600DA6872 /* NSFont-MailAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFont-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFE609AD757600DA6872 /* NSMutableAttributedString-MailTextAttachments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString-MailTextAttachments.h"; sourceTree = "<group>"; };
+		F1E2BFE809AD757600DA6872 /* NSNotificationCenter-ToReplaceCenterWithOurOwn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter-ToReplaceCenterWithOurOwn.h"; sourceTree = "<group>"; };
+		F1E2BFE909AD757600DA6872 /* NSObject-NonModalAlertPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject-NonModalAlertPanel.h"; sourceTree = "<group>"; };
+		F1E2BFEA09AD757600DA6872 /* NSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
+		F1E2BFEC09AD757600DA6872 /* NSPopUpButton-MailAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSPopUpButton-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFED09AD757600DA6872 /* NSString-AtomicAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString-AtomicAddress.h"; sourceTree = "<group>"; };
+		F1E2BFEE09AD757600DA6872 /* NSString-FindPanelSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString-FindPanelSupport.h"; sourceTree = "<group>"; };
+		F1E2BFEF09AD757600DA6872 /* NSTextAttachmentCell-ForNeatAttachmentFeatures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachmentCell-ForNeatAttachmentFeatures.h"; sourceTree = "<group>"; };
+		F1E2BFF009AD757600DA6872 /* NSTextFieldCell-ShouldntTheAppKitBeDoingThis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextFieldCell-ShouldntTheAppKitBeDoingThis.h"; sourceTree = "<group>"; };
+		F1E2BFF109AD757600DA6872 /* NSTextStorage-AttachmentAttrFixCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage-AttachmentAttrFixCategory.h"; sourceTree = "<group>"; };
+		F1E2BFF209AD757600DA6872 /* NSTextView-AtomicAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView-AtomicAddress.h"; sourceTree = "<group>"; };
+		F1E2BFF309AD757600DA6872 /* NSTextView-FindPanelTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView-FindPanelTarget.h"; sourceTree = "<group>"; };
+		F1E2BFF409AD757600DA6872 /* NSTextView-WebAttachmentSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTextView-WebAttachmentSupport.h"; sourceTree = "<group>"; };
+		F1E2BFF509AD757600DA6872 /* NSToolbar-MailAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSToolbar-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2BFF609AD757600DA6872 /* NSView-FocusViewSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView-FocusViewSupport.h"; sourceTree = "<group>"; };
+		F1E2BFF709AD757600DA6872 /* NSView-TilingSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSView-TilingSupport.h"; sourceTree = "<group>"; };
+		F1E2BFF909AD757600DA6872 /* NSWindow-MailSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindow-MailSwizzle.h"; sourceTree = "<group>"; };
+		F1E2BFFA09AD757600DA6872 /* OEEmailImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OEEmailImporter.h; sourceTree = "<group>"; };
+		F1E2BFFB09AD757600DA6872 /* OldCompletionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OldCompletionController.h; sourceTree = "<group>"; };
+		F1E2BFFC09AD757600DA6872 /* PasswordPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PasswordPanel.h; sourceTree = "<group>"; };
+		F1E2BFFD09AD757600DA6872 /* POPAccountDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPAccountDetails.h; sourceTree = "<group>"; };
+		F1E2BFFE09AD757600DA6872 /* PresenceTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresenceTracker.h; sourceTree = "<group>"; };
+		F1E2C00609AD761800DA6872 /* QuickTimeAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = QuickTimeAttachmentView.h; sourceTree = "<group>"; };
+		F1E2C00709AD761800DA6872 /* RankCell.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = RankCell.h; sourceTree = "<group>"; };
+		F1E2C00809AD761800DA6872 /* RolloverButtonCell.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = RolloverButtonCell.h; sourceTree = "<group>"; };
+		F1E2C00909AD761800DA6872 /* RoundedView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = RoundedView.h; sourceTree = "<group>"; };
+		F1E2C00A09AD761800DA6872 /* SearchTextField.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
+		F1E2C00B09AD761800DA6872 /* SenderImageCell.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SenderImageCell.h; sourceTree = "<group>"; };
+		F1E2C00C09AD761800DA6872 /* Signature-Applescript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Signature-Applescript.h"; sourceTree = "<group>"; };
+		F1E2C00D09AD761800DA6872 /* Signature.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = Signature.h; sourceTree = "<group>"; };
+		F1E2C00E09AD761800DA6872 /* SignatureBundle.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SignatureBundle.h; sourceTree = "<group>"; };
+		F1E2C00F09AD761800DA6872 /* SignaturePreferences.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SignaturePreferences.h; sourceTree = "<group>"; };
+		F1E2C01009AD761800DA6872 /* SingleMessageViewer.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SingleMessageViewer.h; sourceTree = "<group>"; };
+		F1E2C01109AD761800DA6872 /* SMTPSettings.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SMTPSettings.h; sourceTree = "<group>"; };
+		F1E2C01209AD761800DA6872 /* StartupManager.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = StartupManager.h; sourceTree = "<group>"; };
+		F1E2C01309AD761800DA6872 /* SubjectFormatter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SubjectFormatter.h; sourceTree = "<group>"; };
+		F1E2C01409AD761800DA6872 /* TableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TableHeaderView.h; sourceTree = "<group>"; };
+		F1E2C01509AD761800DA6872 /* TableViewManager-AppleScript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "TableViewManager-AppleScript.h"; sourceTree = "<group>"; };
+		F1E2C01609AD761800DA6872 /* TableViewManager-FilteredList_Management.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "TableViewManager-FilteredList_Management.h"; sourceTree = "<group>"; };
+		F1E2C01709AD761800DA6872 /* TableViewManager.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TableViewManager.h; sourceTree = "<group>"; };
+		F1E2C01809AD761800DA6872 /* TextMessageDisplay.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TextMessageDisplay.h; sourceTree = "<group>"; };
+		F1E2C01909AD761800DA6872 /* ThreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ThreadDisplay.h; sourceTree = "<group>"; };
+		F1E2C01C09AD761800DA6872 /* TransferOperation.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TransferOperation.h; sourceTree = "<group>"; };
+		F1E2C01D09AD761800DA6872 /* UncommentedAddressCommand.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = UncommentedAddressCommand.h; sourceTree = "<group>"; };
+		F1E2C01E09AD761800DA6872 /* ViewerPreferences.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ViewerPreferences.h; sourceTree = "<group>"; };
+		F1E2C01F09AD761800DA6872 /* ViewTextAttachmentCell.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ViewTextAttachmentCell.h; sourceTree = "<group>"; };
+		F1E2C02009AD761800DA6872 /* VisibleStateObject.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = VisibleStateObject.h; sourceTree = "<group>"; };
+		F1E2C02109AD761800DA6872 /* WebHTMLView-MailExtras.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "WebHTMLView-MailExtras.h"; sourceTree = "<group>"; };
+		F1E2C02209AD761800DA6872 /* WebMessageController.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = WebMessageController.h; sourceTree = "<group>"; };
+		F1E2C02309AD761800DA6872 /* WebMessageDisplay.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = WebMessageDisplay.h; sourceTree = "<group>"; };
+		F1E2C02509AD762D00DA6872 /* _MailboxUidEnumerator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = _MailboxUidEnumerator.h; sourceTree = "<group>"; };
+		F1E2C02A09AD762D00DA6872 /* _NSSocket.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = _NSSocket.h; sourceTree = "<group>"; };
+		F1E2C02B09AD762D00DA6872 /* _OutgoingMessageBody.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = _OutgoingMessageBody.h; sourceTree = "<group>"; };
+		F1E2C02C09AD762D00DA6872 /* _RootlessMailboxUid.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = _RootlessMailboxUid.h; sourceTree = "<group>"; };
+		F1E2C02D09AD762D00DA6872 /* ABAddressBook-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABAddressBook-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C02E09AD762D00DA6872 /* ABGroup-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABGroup-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C02F09AD762D00DA6872 /* ABLDAP_ResultElement-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABLDAP_ResultElement-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C03009AD762D00DA6872 /* ABMailRecent-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABMailRecent-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C03109AD762D00DA6872 /* ABPerson-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABPerson-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C03209AD762D00DA6872 /* ABRecord-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "ABRecord-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C03309AD762D00DA6872 /* Account-Applescript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Account-Applescript.h"; sourceTree = "<group>"; };
+		F1E2C03409AD762D00DA6872 /* Account-TempHack.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Account-TempHack.h"; sourceTree = "<group>"; };
+		F1E2C03509AD762D00DA6872 /* Account.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		F1E2C03609AD762D00DA6872 /* ActivityMonitor.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ActivityMonitor.h; sourceTree = "<group>"; };
+		F1E2C03709AD762D00DA6872 /* AppleScriptHeaderRecord.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AppleScriptHeaderRecord.h; sourceTree = "<group>"; };
+		F1E2C03809AD762D00DA6872 /* ArchiveFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ArchiveFileWrapper.h; sourceTree = "<group>"; };
+		F1E2C03909AD762D00DA6872 /* ASExtendedOutlineView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ASExtendedOutlineView.h; sourceTree = "<group>"; };
+		F1E2C03A09AD762D00DA6872 /* ASExtendedTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ASExtendedTableHeaderView.h; sourceTree = "<group>"; };
+		F1E2C03B09AD762D00DA6872 /* ASExtendedTableView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ASExtendedTableView.h; sourceTree = "<group>"; };
+		F1E2C03C09AD762D00DA6872 /* AuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = AuthScheme.h; sourceTree = "<group>"; };
+		F1E2C03D09AD762D00DA6872 /* BerkeleyMbox.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = BerkeleyMbox.h; sourceTree = "<group>"; };
+		F1E2C03E09AD762D00DA6872 /* ByteSet.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ByteSet.h; sourceTree = "<group>"; };
+		F1E2C03F09AD762D00DA6872 /* CachingABRecord.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = CachingABRecord.h; sourceTree = "<group>"; };
+		F1E2C04009AD762D00DA6872 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = CDStructures.h; sourceTree = "<group>"; };
+		F1E2C04109AD762D00DA6872 /* Connection-Gross.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Connection-Gross.h"; sourceTree = "<group>"; };
+		F1E2C04209AD762D00DA6872 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		F1E2C04309AD762D00DA6872 /* CRAM_MD5Authenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = CRAM_MD5Authenticator.h; sourceTree = "<group>"; };
+		F1E2C04409AD762D00DA6872 /* CRAM_MD5AuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = CRAM_MD5AuthScheme.h; sourceTree = "<group>"; };
+		F1E2C04509AD762D00DA6872 /* DataScanner.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = DataScanner.h; sourceTree = "<group>"; };
+		F1E2C04609AD762D00DA6872 /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = Defaults.h; sourceTree = "<group>"; };
+		F1E2C04709AD762D00DA6872 /* DeliveryAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = DeliveryAccount.h; sourceTree = "<group>"; };
+		F1E2C04809AD762D00DA6872 /* ExchangeAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ExchangeAccount.h; sourceTree = "<group>"; };
+		F1E2C04909AD762D00DA6872 /* ExchangeConnection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ExchangeConnection.h; sourceTree = "<group>"; };
+		F1E2C04A09AD762D00DA6872 /* ExpandingSplitView.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ExpandingSplitView.h; sourceTree = "<group>"; };
+		F1E2C04B09AD762D00DA6872 /* GSSAPIAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = GSSAPIAuthenticator.h; sourceTree = "<group>"; };
+		F1E2C04C09AD762D00DA6872 /* GSSAPIAuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = GSSAPIAuthScheme.h; sourceTree = "<group>"; };
+		F1E2C04D09AD762D00DA6872 /* HelpButton.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = HelpButton.h; sourceTree = "<group>"; };
+		F1E2C04E09AD762D00DA6872 /* HFSFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = HFSFileWrapper.h; sourceTree = "<group>"; };
+		F1E2C04F09AD762D00DA6872 /* IMAPAccount-ScriptingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "IMAPAccount-ScriptingSupport.h"; sourceTree = "<group>"; };
+		F1E2C05009AD762D00DA6872 /* IMAPAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPAccount.h; sourceTree = "<group>"; };
+		F1E2C05109AD762D00DA6872 /* IMAPConnection-MFPrivate.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "IMAPConnection-MFPrivate.h"; sourceTree = "<group>"; };
+		F1E2C05209AD762D00DA6872 /* IMAPConnection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPConnection.h; sourceTree = "<group>"; };
+		F1E2C05309AD762D00DA6872 /* IMAPMessage.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPMessage.h; sourceTree = "<group>"; };
+		F1E2C05409AD762D00DA6872 /* IMAPOfflineCopyOnStupidServerOperation.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPOfflineCopyOnStupidServerOperation.h; sourceTree = "<group>"; };
+		F1E2C05509AD762D00DA6872 /* IMAPOperation.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPOperation.h; sourceTree = "<group>"; };
+		F1E2C05609AD762D00DA6872 /* IMAPOperationCache.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPOperationCache.h; sourceTree = "<group>"; };
+		F1E2C05709AD762D00DA6872 /* IMAPResponse.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPResponse.h; sourceTree = "<group>"; };
+		F1E2C05809AD762D00DA6872 /* IMAPStore.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = IMAPStore.h; sourceTree = "<group>"; };
+		F1E2C05909AD762D00DA6872 /* InvocationQueue.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = InvocationQueue.h; sourceTree = "<group>"; };
+		F1E2C05A09AD762D00DA6872 /* iToolsAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = iToolsAccount.h; sourceTree = "<group>"; };
+		F1E2C05B09AD762D00DA6872 /* KerberosV4Authenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = KerberosV4Authenticator.h; sourceTree = "<group>"; };
+		F1E2C05C09AD762D00DA6872 /* KerberosV4AuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = KerberosV4AuthScheme.h; sourceTree = "<group>"; };
+		F1E2C05D09AD762D00DA6872 /* KPOPAuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = KPOPAuthScheme.h; sourceTree = "<group>"; };
+		F1E2C05E09AD762D00DA6872 /* KPOPConnection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = KPOPConnection.h; sourceTree = "<group>"; };
+		F1E2C05F09AD762D00DA6872 /* LocalAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = LocalAccount.h; sourceTree = "<group>"; };
+		F1E2C06009AD762D00DA6872 /* LoginAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = LoginAuthenticator.h; sourceTree = "<group>"; };
+		F1E2C06109AD762D00DA6872 /* MailAccount-Internal.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MailAccount-Internal.h"; sourceTree = "<group>"; };
+		F1E2C06209AD762D00DA6872 /* MailAccount-ScriptingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MailAccount-ScriptingSupport.h"; sourceTree = "<group>"; };
+		F1E2C06309AD762D00DA6872 /* MailAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MailAccount.h; sourceTree = "<group>"; };
+		F1E2C06409AD762D00DA6872 /* MailAddressManager.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MailAddressManager.h; sourceTree = "<group>"; };
+		F1E2C06509AD762D00DA6872 /* MailboxUid-ScriptingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MailboxUid-ScriptingSupport.h"; sourceTree = "<group>"; };
+		F1E2C06609AD762D00DA6872 /* MailboxUid.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MailboxUid.h; sourceTree = "<group>"; };
+		F1E2C06709AD762D00DA6872 /* MailDelivery.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MailDelivery.h; sourceTree = "<group>"; };
+		F1E2C06809AD762D00DA6872 /* MainThread.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MainThread.h; sourceTree = "<group>"; };
+		F1E2C06A09AD762D00DA6872 /* Message-ScriptingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Message-ScriptingSupport.h"; sourceTree = "<group>"; };
+		F1E2C06B09AD762D00DA6872 /* Message-Threads.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "Message-Threads.h"; sourceTree = "<group>"; };
+		F1E2C06C09AD762D00DA6872 /* Message.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		F1E2C06D09AD762D00DA6872 /* MessageAddressee.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageAddressee.h; sourceTree = "<group>"; };
+		F1E2C06E09AD762D00DA6872 /* MessageBody.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageBody.h; sourceTree = "<group>"; };
+		F1E2C06F09AD762D00DA6872 /* MessageFlags.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageFlags.h; sourceTree = "<group>"; };
+		F1E2C07009AD762D00DA6872 /* MessageHeaders.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageHeaders.h; sourceTree = "<group>"; };
+		F1E2C07109AD762D00DA6872 /* MessageHTMLConverter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageHTMLConverter.h; sourceTree = "<group>"; };
+		F1E2C07209AD762D00DA6872 /* MessageKeychainManager.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageKeychainManager.h; sourceTree = "<group>"; };
+		F1E2C07309AD762D00DA6872 /* MessageRouter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageRouter.h; sourceTree = "<group>"; };
+		F1E2C07409AD762D00DA6872 /* MessageRule-Applescript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MessageRule-Applescript.h"; sourceTree = "<group>"; };
+		F1E2C07509AD762D00DA6872 /* MessageRule.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageRule.h; sourceTree = "<group>"; };
+		F1E2C07709AD762D00DA6872 /* MessageRuleCriterion.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageRuleCriterion.h; sourceTree = "<group>"; };
+		F1E2C07809AD762D00DA6872 /* MessageSigner.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageSigner.h; sourceTree = "<group>"; };
+		F1E2C07A09AD762D00DA6872 /* MessageStore-MessageFrameworkOnly.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MessageStore-MessageFrameworkOnly.h"; sourceTree = "<group>"; };
+		F1E2C07B09AD762D00DA6872 /* MessageStore-ScriptingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MessageStore-ScriptingSupport.h"; sourceTree = "<group>"; };
+		F1E2C07C09AD762D00DA6872 /* MessageStore.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageStore.h; sourceTree = "<group>"; };
+		F1E2C07D09AD762D00DA6872 /* MessageThread.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageThread.h; sourceTree = "<group>"; };
+		F1E2C07E09AD762D00DA6872 /* MessageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageURLProtocol.h; sourceTree = "<group>"; };
+		F1E2C07F09AD762D00DA6872 /* MessageWriter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MessageWriter.h; sourceTree = "<group>"; };
+		F1E2C08009AD762D00DA6872 /* MFError-MessageSignerSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MFError-MessageSignerSupport.h"; sourceTree = "<group>"; };
+		F1E2C08109AD762D00DA6872 /* MFError.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MFError.h; sourceTree = "<group>"; };
+		F1E2C08209AD762D00DA6872 /* MimeBody.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimeBody.h; sourceTree = "<group>"; };
+		F1E2C08309AD762D00DA6872 /* MimeCharset.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimeCharset.h; sourceTree = "<group>"; };
+		F1E2C08409AD762D00DA6872 /* MimeEnrichedReader.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimeEnrichedReader.h; sourceTree = "<group>"; };
+		F1E2C08509AD762D00DA6872 /* MimeEnrichedWriter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimeEnrichedWriter.h; sourceTree = "<group>"; };
+		F1E2C08609AD762D00DA6872 /* MimePart-DecodingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MimePart-DecodingSupport.h"; sourceTree = "<group>"; };
+		F1E2C08709AD762D00DA6872 /* MimePart-IMAPSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MimePart-IMAPSupport.h"; sourceTree = "<group>"; };
+		F1E2C08809AD762D00DA6872 /* MimePart-MessageSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MimePart-MessageSupport.h"; sourceTree = "<group>"; };
+		F1E2C08909AD762D00DA6872 /* MimePart-SMIMEExtensions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MimePart-SMIMEExtensions.h"; sourceTree = "<group>"; };
+		F1E2C08A09AD762D00DA6872 /* MimePart.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimePart.h; sourceTree = "<group>"; };
+		F1E2C08B09AD762D00DA6872 /* MimeTextAttachment-IndexingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "MimeTextAttachment-IndexingSupport.h"; sourceTree = "<group>"; };
+		F1E2C08C09AD762D00DA6872 /* MimeTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MimeTextAttachment.h; sourceTree = "<group>"; };
+		F1E2C08D09AD762D00DA6872 /* MonitoredInvocation.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MonitoredInvocation.h; sourceTree = "<group>"; };
+		F1E2C08E09AD762D00DA6872 /* MutableByteSet.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MutableByteSet.h; sourceTree = "<group>"; };
+		F1E2C08F09AD762D00DA6872 /* MutableMessageHeaders.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MutableMessageHeaders.h; sourceTree = "<group>"; };
+		F1E2C09009AD762D00DA6872 /* NetworkController-Private.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NetworkController-Private.h"; sourceTree = "<group>"; };
+		F1E2C09109AD762D00DA6872 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		F1E2C09309AD762D00DA6872 /* NeXTMbox.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NeXTMbox.h; sourceTree = "<group>"; };
+		F1E2C09409AD762D00DA6872 /* NSAppleEventDescriptor-MailAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor-MailAdditions.h"; sourceTree = "<group>"; };
+		F1E2C09509AD762D00DA6872 /* NSAppleScript-MessageRuleAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript-MessageRuleAdditions.h"; sourceTree = "<group>"; };
+		F1E2C09609AD762D00DA6872 /* NSArray-AppleScriptConveniences.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-AppleScriptConveniences.h"; sourceTree = "<group>"; };
+		F1E2C09709AD762D00DA6872 /* NSArray-DateComparisonForRecents.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-DateComparisonForRecents.h"; sourceTree = "<group>"; };
+		F1E2C09809AD762D00DA6872 /* NSArray-DerivedArray.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-DerivedArray.h"; sourceTree = "<group>"; };
+		F1E2C09909AD762D00DA6872 /* NSArray-MessagesFromMixedStoresConvenience.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-MessagesFromMixedStoresConvenience.h"; sourceTree = "<group>"; };
+		F1E2C09A09AD762D00DA6872 /* NSArray-NSEmailAddressArray.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-NSEmailAddressArray.h"; sourceTree = "<group>"; };
+		F1E2C09B09AD762D00DA6872 /* NSArray-removeSelf.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSArray-removeSelf.h"; sourceTree = "<group>"; };
+		F1E2C09C09AD762D00DA6872 /* NSAttributedString-AddressingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-AddressingSupport.h"; sourceTree = "<group>"; };
+		F1E2C09D09AD762D00DA6872 /* NSAttributedString-find_attribute.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-find_attribute.h"; sourceTree = "<group>"; };
+		F1E2C09E09AD762D00DA6872 /* NSAttributedString-FontAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-FontAdditions.h"; sourceTree = "<group>"; };
+		F1E2C09F09AD762D00DA6872 /* NSAttributedString-FormatFlowedSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-FormatFlowedSupport.h"; sourceTree = "<group>"; };
+		F1E2C0A009AD762D00DA6872 /* NSAttributedString-IndexingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-IndexingSupport.h"; sourceTree = "<group>"; };
+		F1E2C0A109AD762D00DA6872 /* NSAttributedString-lockedRTFParsing.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-lockedRTFParsing.h"; sourceTree = "<group>"; };
+		F1E2C0A209AD762D00DA6872 /* NSAttributedString-MessagePasteboardSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-MessagePasteboardSupport.h"; sourceTree = "<group>"; };
+		F1E2C0A309AD762D00DA6872 /* NSAttributedString-MimeEnrichedReader.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-MimeEnrichedReader.h"; sourceTree = "<group>"; };
+		F1E2C0A409AD762D00DA6872 /* NSAttributedString-MimeEnrichedWriter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-MimeEnrichedWriter.h"; sourceTree = "<group>"; };
+		F1E2C0A509AD762D00DA6872 /* NSAttributedString-plain_or_rich.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString-plain_or_rich.h"; sourceTree = "<group>"; };
+		F1E2C0A609AD762D00DA6872 /* NSBundle-MessageFrameworkAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSBundle-MessageFrameworkAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0A709AD762D00DA6872 /* NSCharacterSet-NSCharacterSetUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet-NSCharacterSetUtils.h"; sourceTree = "<group>"; };
+		F1E2C0A809AD762D00DA6872 /* NSCoder-MFMessageFlags.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSCoder-MFMessageFlags.h"; sourceTree = "<group>"; };
+		F1E2C0A909AD762E00DA6872 /* NSColor-NSColorUtilities.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSColor-NSColorUtilities.h"; sourceTree = "<group>"; };
+		F1E2C0AA09AD762E00DA6872 /* NSData-HFSDataConversion.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSData-HFSDataConversion.h"; sourceTree = "<group>"; };
+		F1E2C0AB09AD762E00DA6872 /* NSData-MimeDataEncoding.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSData-MimeDataEncoding.h"; sourceTree = "<group>"; };
+		F1E2C0AC09AD762E00DA6872 /* NSData-NSDataUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSData-NSDataUtils.h"; sourceTree = "<group>"; };
+		F1E2C0AD09AD762E00DA6872 /* NSData-UuEnDeCode.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSData-UuEnDeCode.h"; sourceTree = "<group>"; };
+		F1E2C0AE09AD762E00DA6872 /* NSDataMessageStore.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NSDataMessageStore.h; sourceTree = "<group>"; };
+		F1E2C0AF09AD762E00DA6872 /* NSDate-Goodies.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSDate-Goodies.h"; sourceTree = "<group>"; };
+		F1E2C0B009AD762E00DA6872 /* NSDate-toc_extension.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSDate-toc_extension.h"; sourceTree = "<group>"; };
+		F1E2C0B109AD762E00DA6872 /* NSDictionary-Goodies.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSDictionary-Goodies.h"; sourceTree = "<group>"; };
+		F1E2C0B209AD762E00DA6872 /* NSError-MessageAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSError-MessageAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0B309AD762E00DA6872 /* NSError-MessageSignerSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSError-MessageSignerSupport.h"; sourceTree = "<group>"; };
+		F1E2C0B409AD762E00DA6872 /* NSEvent-MessageFrameworkAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSEvent-MessageFrameworkAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0B509AD762E00DA6872 /* NSFileHandle-MessageAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSFileHandle-MessageAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0B609AD762E00DA6872 /* NSFileManager-NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSFileManager-NSFileManagerAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0B709AD762E00DA6872 /* NSFileWrapper-HFSDataConversion.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSFileWrapper-HFSDataConversion.h"; sourceTree = "<group>"; };
+		F1E2C0B809AD762E00DA6872 /* NSFileWrapper-HFSExtensions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSFileWrapper-HFSExtensions.h"; sourceTree = "<group>"; };
+		F1E2C0B909AD762E00DA6872 /* NSImage-ASBetterImageLookup.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSImage-ASBetterImageLookup.h"; sourceTree = "<group>"; };
+		F1E2C0BA09AD762E00DA6872 /* NSInvocation-MailExtensions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSInvocation-MailExtensions.h"; sourceTree = "<group>"; };
+		F1E2C0BB09AD762E00DA6872 /* NSLock-MessageAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSLock-MessageAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0BC09AD762E00DA6872 /* NSMailDelivery.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NSMailDelivery.h; sourceTree = "<group>"; };
+		F1E2C0BD09AD762E00DA6872 /* NSMutableArray-Convenience.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-Convenience.h"; sourceTree = "<group>"; };
+		F1E2C0BE09AD762E00DA6872 /* NSMutableArray-LockedAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-LockedAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0BF09AD762E00DA6872 /* NSMutableArray-SortedArrayExtensions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray-SortedArrayExtensions.h"; sourceTree = "<group>"; };
+		F1E2C0C009AD762E00DA6872 /* NSMutableAttributedString-MessageFrameworkAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString-MessageFrameworkAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0C109AD762E00DA6872 /* NSMutableAttributedString-WebHTMLAttachment.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString-WebHTMLAttachment.h"; sourceTree = "<group>"; };
+		F1E2C0C209AD762E00DA6872 /* NSMutableData-MimeDataEncoding.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-MimeDataEncoding.h"; sourceTree = "<group>"; };
+		F1E2C0C309AD762E00DA6872 /* NSMutableData-NSDataUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-NSDataUtils.h"; sourceTree = "<group>"; };
+		F1E2C0C409AD762E00DA6872 /* NSMutableData-RFC2231Support.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableData-RFC2231Support.h"; sourceTree = "<group>"; };
+		F1E2C0C509AD762E00DA6872 /* NSMutableDictionary-Goodies.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary-Goodies.h"; sourceTree = "<group>"; };
+		F1E2C0C609AD762E00DA6872 /* NSMutableDictionary-RFC2231Support.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary-RFC2231Support.h"; sourceTree = "<group>"; };
+		F1E2C0C709AD762E00DA6872 /* NSMutableSet-MessageAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet-MessageAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0C909AD762E00DA6872 /* NSNotificationCenter-MainThreadPosting.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter-MainThreadPosting.h"; sourceTree = "<group>"; };
+		F1E2C0CA09AD762E00DA6872 /* NSObject-LockingAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSObject-LockingAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0CB09AD762E00DA6872 /* NSObject-MainThreadMessaging.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSObject-MainThreadMessaging.h"; sourceTree = "<group>"; };
+		F1E2C0CC09AD762E00DA6872 /* NSPrivateMessageClassForFindingBundle.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = NSPrivateMessageClassForFindingBundle.h; sourceTree = "<group>"; };
+		F1E2C0CE09AD762E00DA6872 /* NSScanner-NSScannerUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSScanner-NSScannerUtils.h"; sourceTree = "<group>"; };
+		F1E2C0CF09AD762E00DA6872 /* NSSound-MessageAdditions.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSSound-MessageAdditions.h"; sourceTree = "<group>"; };
+		F1E2C0D009AD762E00DA6872 /* NSString-FormatFlowedSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-FormatFlowedSupport.h"; sourceTree = "<group>"; };
+		F1E2C0D109AD762E00DA6872 /* NSString-IMAPNameEncoding.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-IMAPNameEncoding.h"; sourceTree = "<group>"; };
+		F1E2C0D209AD762E00DA6872 /* NSString-MimeCharsetSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-MimeCharsetSupport.h"; sourceTree = "<group>"; };
+		F1E2C0D309AD762E00DA6872 /* NSString-MimeEnrichedReader.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-MimeEnrichedReader.h"; sourceTree = "<group>"; };
+		F1E2C0D409AD762E00DA6872 /* NSString-MimeHeaderEncoding.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-MimeHeaderEncoding.h"; sourceTree = "<group>"; };
+		F1E2C0D609AD762E00DA6872 /* NSString-NSEmailAddressString.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-NSEmailAddressString.h"; sourceTree = "<group>"; };
+		F1E2C0D709AD762E00DA6872 /* NSString-NSStringUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-NSStringUtils.h"; sourceTree = "<group>"; };
+		F1E2C0D809AD762E00DA6872 /* NSString-PathUtils.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSString-PathUtils.h"; sourceTree = "<group>"; };
+		F1E2C0DA09AD762E00DA6872 /* NSTableView-WhyIsntTheKitDoingThisForUs.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSTableView-WhyIsntTheKitDoingThisForUs.h"; sourceTree = "<group>"; };
+		F1E2C0DC09AD762E00DA6872 /* NSTextAttachment-IndexingSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment-IndexingSupport.h"; sourceTree = "<group>"; };
+		F1E2C0DD09AD762E00DA6872 /* NSTextAttachment-MimeSupport.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSTextAttachment-MimeSupport.h"; sourceTree = "<group>"; };
+		F1E2C0DE09AD762E00DA6872 /* NSTimeZone-HowAboutSomeNiceCaching.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "NSTimeZone-HowAboutSomeNiceCaching.h"; sourceTree = "<group>"; };
+		F1E2C0DF09AD762E00DA6872 /* ObjectCache.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = ObjectCache.h; sourceTree = "<group>"; };
+		F1E2C0E009AD762E00DA6872 /* OutgoingMessage.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = OutgoingMessage.h; sourceTree = "<group>"; };
+		F1E2C0E109AD762E00DA6872 /* PlaceholderFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = PlaceholderFileWrapper.h; sourceTree = "<group>"; };
+		F1E2C0E209AD762E00DA6872 /* PlainAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = PlainAuthenticator.h; sourceTree = "<group>"; };
+		F1E2C0E309AD762E00DA6872 /* PlainAuthScheme.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = PlainAuthScheme.h; sourceTree = "<group>"; };
+		F1E2C0E409AD762E00DA6872 /* POP3Connection-PrivateCommands.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "POP3Connection-PrivateCommands.h"; sourceTree = "<group>"; };
+		F1E2C0E509AD762E00DA6872 /* POP3Connection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = POP3Connection.h; sourceTree = "<group>"; };
+		F1E2C0E609AD762E00DA6872 /* POP3FetchStore.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = POP3FetchStore.h; sourceTree = "<group>"; };
+		F1E2C0E709AD762E00DA6872 /* POPAccount-Applescript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "POPAccount-Applescript.h"; sourceTree = "<group>"; };
+		F1E2C0E809AD762E00DA6872 /* POPAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = POPAccount.h; sourceTree = "<group>"; };
+		F1E2C0E909AD762E00DA6872 /* POPMessage.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = POPMessage.h; sourceTree = "<group>"; };
+		F1E2C0EA09AD762E00DA6872 /* RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = RegularExpression.h; sourceTree = "<group>"; };
+		F1E2C0EB09AD762E00DA6872 /* SASLAuthenticator.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SASLAuthenticator.h; sourceTree = "<group>"; };
+		F1E2C0EC09AD762E00DA6872 /* SMTPAccount-Applescript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "SMTPAccount-Applescript.h"; sourceTree = "<group>"; };
+		F1E2C0ED09AD762E00DA6872 /* SMTPAccount.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SMTPAccount.h; sourceTree = "<group>"; };
+		F1E2C0EE09AD762E00DA6872 /* SMTPConnection-PrivateCommands.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "SMTPConnection-PrivateCommands.h"; sourceTree = "<group>"; };
+		F1E2C0EF09AD762E00DA6872 /* SMTPConnection.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SMTPConnection.h; sourceTree = "<group>"; };
+		F1E2C0F009AD762E00DA6872 /* SMTPDelivery.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SMTPDelivery.h; sourceTree = "<group>"; };
+		F1E2C0F109AD762E00DA6872 /* SoundMenu.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SoundMenu.h; sourceTree = "<group>"; };
+		F1E2C0F209AD762E00DA6872 /* SoundPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SoundPopUpButton.h; sourceTree = "<group>"; };
+		F1E2C0F309AD762E00DA6872 /* SpecialMailboxUid-AppleScript.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = "SpecialMailboxUid-AppleScript.h"; sourceTree = "<group>"; };
+		F1E2C0F409AD762E00DA6872 /* SpecialMailboxUid.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = SpecialMailboxUid.h; sourceTree = "<group>"; };
+		F1E2C0F509AD762E00DA6872 /* TableOfContents.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TableOfContents.h; sourceTree = "<group>"; };
+		F1E2C0F609AD762E00DA6872 /* TOCMessage.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = TOCMessage.h; sourceTree = "<group>"; };
+		F1E2C0F709AD762E00DA6872 /* URLifier.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = URLifier.h; sourceTree = "<group>"; };
+		F1E2C0F809AD762E00DA6872 /* URLMatch.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = URLMatch.h; sourceTree = "<group>"; };
+		F1E2C0F909AD762E00DA6872 /* UsageCounter.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = UsageCounter.h; sourceTree = "<group>"; };
+		F1E2C0FA09AD762E00DA6872 /* WebHTMLAttachment.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = WebHTMLAttachment.h; sourceTree = "<group>"; };
+		F1E2C0FB09AD762E00DA6872 /* WebMessageDocument.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = WebMessageDocument.h; sourceTree = "<group>"; };
+		F1E2C0FC09AD762E00DA6872 /* WorkerThread.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = WorkerThread.h; sourceTree = "<group>"; };
+		F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.objc; path = MIMEfixPreferences.m; sourceTree = "<group>"; };
+		F1FF552609ADF53300EC55CB /* MIMEfixPreferences.h */ = {isa = PBXFileReference; fileEncoding = "-2147483647"; lastKnownFileType = sourcecode.c.h; path = MIMEfixPreferences.h; sourceTree = "<group>"; };
+		F1FF558109AE133500EC55CB /* MIMEfixPreference.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MIMEfixPreference.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MIMEfix */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2C02409AD762D00DA6872 /* Message.framework API */,
+				F1E2BF6309AD757500DA6872 /* Mail API */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				F1FF558109AE133500EC55CB /* MIMEfixPreference.nib */,
+				F16CDCF909AF2A380013A434 /* MIMEfix.tiff */,
+			);
+			name = MIMEfix;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F16CDC8F09AF20ED0013A434 /* Defaults.plist */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2BF4E09AD74FA00DA6872 /* MIMEfixbundle.h */,
+				F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */,
+				F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */,
+				F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */,
+				F118227809AE965200EBF3AD /* base64.h */,
+				F118227909AE965200EBF3AD /* base64.c */,
+				F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */,
+				F1FF552609ADF53300EC55CB /* MIMEfixPreferences.h */,
+				F118228709AE97CF00EBF3AD /* NSPreferences_MIMEfix.h */,
+				F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* MIMEfix.mailbundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F193D15D09ADC3B600A49216 /* NSPreferences.h */,
+				F1E2BF4D09AD74FA00DA6872 /* main.m */,
+				F1E2BF4B09AD74FA00DA6872 /* JMUtilities.h */,
+				F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */,
+				32DBCF630370AF2F00C91783 /* MIMEfix_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F1E2BF6309AD757500DA6872 /* Mail API */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2C00609AD761800DA6872 /* QuickTimeAttachmentView.h */,
+				F1E2C00709AD761800DA6872 /* RankCell.h */,
+				F1E2C00809AD761800DA6872 /* RolloverButtonCell.h */,
+				F1E2C00909AD761800DA6872 /* RoundedView.h */,
+				F1E2C00A09AD761800DA6872 /* SearchTextField.h */,
+				F1E2C00B09AD761800DA6872 /* SenderImageCell.h */,
+				F1E2C00C09AD761800DA6872 /* Signature-Applescript.h */,
+				F1E2C00D09AD761800DA6872 /* Signature.h */,
+				F1E2C00E09AD761800DA6872 /* SignatureBundle.h */,
+				F1E2C00F09AD761800DA6872 /* SignaturePreferences.h */,
+				F1E2C01009AD761800DA6872 /* SingleMessageViewer.h */,
+				F1E2C01109AD761800DA6872 /* SMTPSettings.h */,
+				F1E2C01209AD761800DA6872 /* StartupManager.h */,
+				F1E2C01309AD761800DA6872 /* SubjectFormatter.h */,
+				F1E2C01409AD761800DA6872 /* TableHeaderView.h */,
+				F1E2C01509AD761800DA6872 /* TableViewManager-AppleScript.h */,
+				F1E2C01609AD761800DA6872 /* TableViewManager-FilteredList_Management.h */,
+				F1E2C01709AD761800DA6872 /* TableViewManager.h */,
+				F1E2C01809AD761800DA6872 /* TextMessageDisplay.h */,
+				F1E2C01909AD761800DA6872 /* ThreadDisplay.h */,
+				F1E2C01C09AD761800DA6872 /* TransferOperation.h */,
+				F1E2C01D09AD761800DA6872 /* UncommentedAddressCommand.h */,
+				F1E2C01E09AD761800DA6872 /* ViewerPreferences.h */,
+				F1E2C01F09AD761800DA6872 /* ViewTextAttachmentCell.h */,
+				F1E2C02009AD761800DA6872 /* VisibleStateObject.h */,
+				F1E2C02109AD761800DA6872 /* WebHTMLView-MailExtras.h */,
+				F1E2C02209AD761800DA6872 /* WebMessageController.h */,
+				F1E2C02309AD761800DA6872 /* WebMessageDisplay.h */,
+				F1E2BF6409AD757600DA6872 /* _AttachmentQueueEntry.h */,
+				F1E2BF6509AD757600DA6872 /* _AutosizingClipView.h */,
+				F1E2BF6609AD757600DA6872 /* Account-MailUIExtras.h */,
+				F1E2BF6709AD757600DA6872 /* AccountDetails.h */,
+				F1E2BF6809AD757600DA6872 /* AccountPreferences.h */,
+				F1E2BF6909AD757600DA6872 /* ActivityViewEntry.h */,
+				F1E2BF6A09AD757600DA6872 /* ActivityViewer.h */,
+				F1E2BF6B09AD757600DA6872 /* AddressAttachment.h */,
+				F1E2BF6C09AD757600DA6872 /* AddressAttachmentCell.h */,
+				F1E2BF6D09AD757600DA6872 /* AddressCommentCommand.h */,
+				F1E2BF6E09AD757600DA6872 /* AddressHistoryController.h */,
+				F1E2BF6F09AD757600DA6872 /* AddressLayoutManager.h */,
+				F1E2BF7009AD757600DA6872 /* AddressPicker.h */,
+				F1E2BF7109AD757600DA6872 /* AddressTextField.h */,
+				F1E2BF7209AD757600DA6872 /* ApplescriptEmailImporter.h */,
+				F1E2BF7409AD757600DA6872 /* AttachmentLoader-Internal.h */,
+				F1E2BF7509AD757600DA6872 /* AttachmentLoader.h */,
+				F1E2BF7609AD757600DA6872 /* AttachmentManager-Internal.h */,
+				F1E2BF7709AD757600DA6872 /* AttachmentManager.h */,
+				F1E2BF7809AD757600DA6872 /* AttachmentsView.h */,
+				F1E2BF7A09AD757600DA6872 /* AutosizingScrollView.h */,
+				F1E2BF7B09AD757600DA6872 /* AutosizingTextField.h */,
+				F1E2BF7C09AD757600DA6872 /* CDStructures.h */,
+				F1E2BF7D09AD757600DA6872 /* CertificatePanelController.h */,
+				F1E2BF7E09AD757600DA6872 /* ColorBackgroundView.h */,
+				F1E2BF7F09AD757600DA6872 /* ComposeBackEnd-Internal.h */,
+				F1E2BF8109AD757600DA6872 /* ComposeBackEnd.h */,
+				F1E2BF8209AD757600DA6872 /* ComposingPreferences.h */,
+				F1E2BF8309AD757600DA6872 /* ConcreteMessageMall.h */,
+				F1E2BF8409AD757600DA6872 /* DateCell.h */,
+				F1E2BF8509AD757600DA6872 /* DefaultApplicationPopUpButton.h */,
+				F1E2BF8609AD757600DA6872 /* DeliveryQueue.h */,
+				F1E2BF8709AD757600DA6872 /* DisclosureButtonCell.h */,
+				F1E2BF8809AD757600DA6872 /* DraggingTextView.h */,
+				F1E2BF8909AD757600DA6872 /* EditingTableColumn.h */,
+				F1E2BF8A09AD757600DA6872 /* EmailerEmailImporter.h */,
+				F1E2BF8B09AD757600DA6872 /* EmailImporter.h */,
+				F1E2BF8C09AD757600DA6872 /* EncryptionErrorPanelController.h */,
+				F1E2BF8D09AD757600DA6872 /* EntourageEmailImporter.h */,
+				F1E2BF8E09AD757600DA6872 /* EudoraEmailImporter.h */,
+				F1E2BF8F09AD757600DA6872 /* ExchangeAccountDetails.h */,
+				F1E2BF9009AD757600DA6872 /* FadingMessageDisplay.h */,
+				F1E2BF9109AD757600DA6872 /* FilesystemEmailImporter.h */,
+				F1E2BF9209AD757600DA6872 /* FilteredListInfo.h */,
+				F1E2BF9309AD757600DA6872 /* FindPanel.h */,
+				F1E2BF9409AD757600DA6872 /* FlippedView.h */,
+				F1E2BF9509AD757600DA6872 /* FocusView.h */,
+				F1E2BF9609AD757600DA6872 /* FontMenu.h */,
+				F1E2BF9709AD757600DA6872 /* FontsAndColorsPreferences.h */,
+				F1E2BF9809AD757600DA6872 /* GeneralPreferences.h */,
+				F1E2BF9A09AD757600DA6872 /* ImagePopUpButtonCell.h */,
+				F1E2BF9B09AD757600DA6872 /* ImageTextFieldAlertTrackingCell.h */,
+				F1E2BF9C09AD757600DA6872 /* IMAPAccountDetails.h */,
+				F1E2BF9E09AD757600DA6872 /* Importer.h */,
+				F1E2BF9F09AD757600DA6872 /* ImportItem.h */,
+				F1E2BFA009AD757600DA6872 /* iToolsAccountDetails.h */,
+				F1E2BFA109AD757600DA6872 /* JunkPreferences.h */,
+				F1E2BFA209AD757600DA6872 /* LabelledTextAttachmentCell.h */,
+				F1E2BFA309AD757600DA6872 /* LDAPServer.h */,
+				F1E2BFA409AD757600DA6872 /* MailApp-ActivityViewerScripting.h */,
+				F1E2BFA509AD757600DA6872 /* MailApp-AppleScript.h */,
+				F1E2BFA609AD757600DA6872 /* MailApp-ApplescriptAccountPreferences.h */,
+				F1E2BFA709AD757600DA6872 /* MailApp-ApplescriptComposingPreferences.h */,
+				F1E2BFA809AD757600DA6872 /* MailApp-AppleScriptFontsAndColorsPreferences.h */,
+				F1E2BFA909AD757600DA6872 /* MailApp-ApplescriptGeneralPreferences.h */,
+				F1E2BFAA09AD757600DA6872 /* MailApp-ApplescriptMailSorterPreferences.h */,
+				F1E2BFAB09AD757600DA6872 /* MailApp-ApplescriptSignature.h */,
+				F1E2BFAC09AD757600DA6872 /* MailApp-ApplescriptSignaturePreferences.h */,
+				F1E2BFAD09AD757600DA6872 /* MailApp-ApplescriptViewerPreferences.h */,
+				F1E2BFAE09AD757600DA6872 /* MailApp-MFUserAgent.h */,
+				F1E2BFAF09AD757600DA6872 /* MailApp.h */,
+				F1E2BFB009AD757600DA6872 /* MailboxesChooser.h */,
+				F1E2BFB109AD757600DA6872 /* MailboxesController.h */,
+				F1E2BFB209AD757600DA6872 /* MailboxesOutlineViewOwner.h */,
+				F1E2BFB309AD757600DA6872 /* MailCopyCommand.h */,
+				F1E2BFB409AD757600DA6872 /* MailEmailImporter.h */,
+				F1E2BFB509AD757600DA6872 /* MailMoveCommand.h */,
+				F1E2BFB609AD757600DA6872 /* MailNotificationCenter.h */,
+				F1E2BFB709AD757600DA6872 /* MailSorterPreferences.h */,
+				F1E2BFB809AD757600DA6872 /* MailTextAttachment-CustomAttachmentViewManagement.h */,
+				F1E2BFB909AD757600DA6872 /* MailTextAttachment.h */,
+				F1E2BFBA09AD757600DA6872 /* MailToCommand.h */,
+				F1E2BFBB09AD757600DA6872 /* MboxEmailImporter.h */,
+				F1E2BFBC09AD757600DA6872 /* Message-Chat.h */,
+				F1E2BFBD09AD757600DA6872 /* Message-MailViewerAdditions.h */,
+				F1E2BFBE09AD757600DA6872 /* MessageContentController.h */,
+				F1E2BFBF09AD757600DA6872 /* MessageEditor-MessageEditorToolbar.h */,
+				F1E2BFC009AD757600DA6872 /* MessageEditor-ScriptingAdditions.h */,
+				F1E2BFC109AD757600DA6872 /* MessageEditor.h */,
+				F1E2BFC209AD757600DA6872 /* MessageHeaderDisplay.h */,
+				F1E2BFC309AD757600DA6872 /* MessageHeaderView.h */,
+				F1E2BFC409AD757600DA6872 /* MessageListCell.h */,
+				F1E2BFC509AD757600DA6872 /* MessageListHeaderCell.h */,
+				F1E2BFC609AD757600DA6872 /* MessageMall.h */,
+				F1E2BFC709AD757600DA6872 /* MessagePrinter.h */,
+				F1E2BFC809AD757600DA6872 /* MessageSaver.h */,
+				F1E2BFC909AD757600DA6872 /* MessageTextContainer.h */,
+				F1E2BFCA09AD757600DA6872 /* MessageTextStorage.h */,
+				F1E2BFCB09AD757600DA6872 /* MessageTextView-RichTextConversion.h */,
+				F1E2BFCC09AD757600DA6872 /* MessageTextView-WebAttachmentSupport.h */,
+				F1E2BFCD09AD757600DA6872 /* MessageTextView.h */,
+				F1E2BFCE09AD757600DA6872 /* MessageThreadingData.h */,
+				F1E2BFCF09AD757600DA6872 /* MessageTilingView.h */,
+				F1E2BFD009AD757600DA6872 /* MessageTransfer.h */,
+				F1E2BFD109AD757600DA6872 /* MessageViewer-AppleScript.h */,
+				F1E2BFD209AD757600DA6872 /* MessageViewer-MessageViewerToolbar.h */,
+				F1E2BFD309AD757600DA6872 /* MessageViewer.h */,
+				F1E2BFD409AD757600DA6872 /* MessageViewerBox.h */,
+				F1E2BFD509AD757600DA6872 /* MessageViewingState.h */,
+				F1E2BFD609AD757600DA6872 /* MessageWebView.h */,
+				F1E2BFD709AD757600DA6872 /* MouseTracker.h */,
+				F1E2BFD809AD757600DA6872 /* MouseTrackingWindow.h */,
+				F1E2BFD909AD757600DA6872 /* MVComposeAccessoryViewOwner.h */,
+				F1E2BFDA09AD757600DA6872 /* MVMailBundle.h */,
+				F1E2BFDB09AD757600DA6872 /* NetscapeEmailImporter.h */,
+				F1E2BFDC09AD757600DA6872 /* NonModalAlert.h */,
+				F1E2BFDD09AD757600DA6872 /* NSAlert-MFErrorSupport.h */,
+				F1E2BFDE09AD757600DA6872 /* NSArray-AtomicAddress.h */,
+				F1E2BFDF09AD757600DA6872 /* NSAttributedString-AtomicAddress.h */,
+				F1E2BFE009AD757600DA6872 /* NSClipView-AutosizingScrollViewAdditions.h */,
+				F1E2BFE209AD757600DA6872 /* NSEvent-MailViewerEvent.h */,
+				F1E2BFE409AD757600DA6872 /* NSFont-MailAdditions.h */,
+				F1E2BFE609AD757600DA6872 /* NSMutableAttributedString-MailTextAttachments.h */,
+				F1E2BFE809AD757600DA6872 /* NSNotificationCenter-ToReplaceCenterWithOurOwn.h */,
+				F1E2BFE909AD757600DA6872 /* NSObject-NonModalAlertPanel.h */,
+				F1E2BFEA09AD757600DA6872 /* NSObject.h */,
+				F1E2BFEC09AD757600DA6872 /* NSPopUpButton-MailAdditions.h */,
+				F1E2BFED09AD757600DA6872 /* NSString-AtomicAddress.h */,
+				F1E2BFEE09AD757600DA6872 /* NSString-FindPanelSupport.h */,
+				F1E2BFEF09AD757600DA6872 /* NSTextAttachmentCell-ForNeatAttachmentFeatures.h */,
+				F1E2BFF009AD757600DA6872 /* NSTextFieldCell-ShouldntTheAppKitBeDoingThis.h */,
+				F1E2BFF109AD757600DA6872 /* NSTextStorage-AttachmentAttrFixCategory.h */,
+				F1E2BFF209AD757600DA6872 /* NSTextView-AtomicAddress.h */,
+				F1E2BFF309AD757600DA6872 /* NSTextView-FindPanelTarget.h */,
+				F1E2BFF409AD757600DA6872 /* NSTextView-WebAttachmentSupport.h */,
+				F1E2BFF509AD757600DA6872 /* NSToolbar-MailAdditions.h */,
+				F1E2BFF609AD757600DA6872 /* NSView-FocusViewSupport.h */,
+				F1E2BFF709AD757600DA6872 /* NSView-TilingSupport.h */,
+				F1E2BFF909AD757600DA6872 /* NSWindow-MailSwizzle.h */,
+				F1E2BFFA09AD757600DA6872 /* OEEmailImporter.h */,
+				F1E2BFFB09AD757600DA6872 /* OldCompletionController.h */,
+				F1E2BFFC09AD757600DA6872 /* PasswordPanel.h */,
+				F1E2BFFD09AD757600DA6872 /* POPAccountDetails.h */,
+				F1E2BFFE09AD757600DA6872 /* PresenceTracker.h */,
+			);
+			path = "Mail API";
+			sourceTree = "<group>";
+		};
+		F1E2C02409AD762D00DA6872 /* Message.framework API */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2C02509AD762D00DA6872 /* _MailboxUidEnumerator.h */,
+				F1E2C02A09AD762D00DA6872 /* _NSSocket.h */,
+				F1E2C02B09AD762D00DA6872 /* _OutgoingMessageBody.h */,
+				F1E2C02C09AD762D00DA6872 /* _RootlessMailboxUid.h */,
+				F1E2C02D09AD762D00DA6872 /* ABAddressBook-MailAdditions.h */,
+				F1E2C02E09AD762D00DA6872 /* ABGroup-MailAdditions.h */,
+				F1E2C02F09AD762D00DA6872 /* ABLDAP_ResultElement-MailAdditions.h */,
+				F1E2C03009AD762D00DA6872 /* ABMailRecent-MailAdditions.h */,
+				F1E2C03109AD762D00DA6872 /* ABPerson-MailAdditions.h */,
+				F1E2C03209AD762D00DA6872 /* ABRecord-MailAdditions.h */,
+				F1E2C03309AD762D00DA6872 /* Account-Applescript.h */,
+				F1E2C03409AD762D00DA6872 /* Account-TempHack.h */,
+				F1E2C03509AD762D00DA6872 /* Account.h */,
+				F1E2C03609AD762D00DA6872 /* ActivityMonitor.h */,
+				F1E2C03709AD762D00DA6872 /* AppleScriptHeaderRecord.h */,
+				F1E2C03809AD762D00DA6872 /* ArchiveFileWrapper.h */,
+				F1E2C03909AD762D00DA6872 /* ASExtendedOutlineView.h */,
+				F1E2C03A09AD762D00DA6872 /* ASExtendedTableHeaderView.h */,
+				F1E2C03B09AD762D00DA6872 /* ASExtendedTableView.h */,
+				F1E2C03C09AD762D00DA6872 /* AuthScheme.h */,
+				F1E2C03D09AD762D00DA6872 /* BerkeleyMbox.h */,
+				F1E2C03E09AD762D00DA6872 /* ByteSet.h */,
+				F1E2C03F09AD762D00DA6872 /* CachingABRecord.h */,
+				F1E2C04009AD762D00DA6872 /* CDStructures.h */,
+				F1E2C04109AD762D00DA6872 /* Connection-Gross.h */,
+				F1E2C04209AD762D00DA6872 /* Connection.h */,
+				F1E2C04309AD762D00DA6872 /* CRAM_MD5Authenticator.h */,
+				F1E2C04409AD762D00DA6872 /* CRAM_MD5AuthScheme.h */,
+				F1E2C04509AD762D00DA6872 /* DataScanner.h */,
+				F1E2C04609AD762D00DA6872 /* Defaults.h */,
+				F1E2C04709AD762D00DA6872 /* DeliveryAccount.h */,
+				F1E2C04809AD762D00DA6872 /* ExchangeAccount.h */,
+				F1E2C04909AD762D00DA6872 /* ExchangeConnection.h */,
+				F1E2C04A09AD762D00DA6872 /* ExpandingSplitView.h */,
+				F1E2C04B09AD762D00DA6872 /* GSSAPIAuthenticator.h */,
+				F1E2C04C09AD762D00DA6872 /* GSSAPIAuthScheme.h */,
+				F1E2C04D09AD762D00DA6872 /* HelpButton.h */,
+				F1E2C04E09AD762D00DA6872 /* HFSFileWrapper.h */,
+				F1E2C04F09AD762D00DA6872 /* IMAPAccount-ScriptingSupport.h */,
+				F1E2C05009AD762D00DA6872 /* IMAPAccount.h */,
+				F1E2C05109AD762D00DA6872 /* IMAPConnection-MFPrivate.h */,
+				F1E2C05209AD762D00DA6872 /* IMAPConnection.h */,
+				F1E2C05309AD762D00DA6872 /* IMAPMessage.h */,
+				F1E2C05409AD762D00DA6872 /* IMAPOfflineCopyOnStupidServerOperation.h */,
+				F1E2C05509AD762D00DA6872 /* IMAPOperation.h */,
+				F1E2C05609AD762D00DA6872 /* IMAPOperationCache.h */,
+				F1E2C05709AD762D00DA6872 /* IMAPResponse.h */,
+				F1E2C05809AD762D00DA6872 /* IMAPStore.h */,
+				F1E2C05909AD762D00DA6872 /* InvocationQueue.h */,
+				F1E2C05A09AD762D00DA6872 /* iToolsAccount.h */,
+				F1E2C05B09AD762D00DA6872 /* KerberosV4Authenticator.h */,
+				F1E2C05C09AD762D00DA6872 /* KerberosV4AuthScheme.h */,
+				F1E2C05D09AD762D00DA6872 /* KPOPAuthScheme.h */,
+				F1E2C05E09AD762D00DA6872 /* KPOPConnection.h */,
+				F1E2C05F09AD762D00DA6872 /* LocalAccount.h */,
+				F1E2C06009AD762D00DA6872 /* LoginAuthenticator.h */,
+				F1E2C06109AD762D00DA6872 /* MailAccount-Internal.h */,
+				F1E2C06209AD762D00DA6872 /* MailAccount-ScriptingSupport.h */,
+				F1E2C06309AD762D00DA6872 /* MailAccount.h */,
+				F1E2C06409AD762D00DA6872 /* MailAddressManager.h */,
+				F1E2C06509AD762D00DA6872 /* MailboxUid-ScriptingSupport.h */,
+				F1E2C06609AD762D00DA6872 /* MailboxUid.h */,
+				F1E2C06709AD762D00DA6872 /* MailDelivery.h */,
+				F1E2C06809AD762D00DA6872 /* MainThread.h */,
+				F1E2C06A09AD762D00DA6872 /* Message-ScriptingSupport.h */,
+				F1E2C06B09AD762D00DA6872 /* Message-Threads.h */,
+				F1E2C06C09AD762D00DA6872 /* Message.h */,
+				F1E2C06D09AD762D00DA6872 /* MessageAddressee.h */,
+				F1E2C06E09AD762D00DA6872 /* MessageBody.h */,
+				F1E2C06F09AD762D00DA6872 /* MessageFlags.h */,
+				F1E2C07009AD762D00DA6872 /* MessageHeaders.h */,
+				F1E2C07109AD762D00DA6872 /* MessageHTMLConverter.h */,
+				F1E2C07209AD762D00DA6872 /* MessageKeychainManager.h */,
+				F1E2C07309AD762D00DA6872 /* MessageRouter.h */,
+				F1E2C07409AD762D00DA6872 /* MessageRule-Applescript.h */,
+				F1E2C07509AD762D00DA6872 /* MessageRule.h */,
+				F1E2C07709AD762D00DA6872 /* MessageRuleCriterion.h */,
+				F1E2C07809AD762D00DA6872 /* MessageSigner.h */,
+				F1E2C07A09AD762D00DA6872 /* MessageStore-MessageFrameworkOnly.h */,
+				F1E2C07B09AD762D00DA6872 /* MessageStore-ScriptingSupport.h */,
+				F1E2C07C09AD762D00DA6872 /* MessageStore.h */,
+				F1E2C07D09AD762D00DA6872 /* MessageThread.h */,
+				F1E2C07E09AD762D00DA6872 /* MessageURLProtocol.h */,
+				F1E2C07F09AD762D00DA6872 /* MessageWriter.h */,
+				F1E2C08009AD762D00DA6872 /* MFError-MessageSignerSupport.h */,
+				F1E2C08109AD762D00DA6872 /* MFError.h */,
+				F1E2C08209AD762D00DA6872 /* MimeBody.h */,
+				F1E2C08309AD762D00DA6872 /* MimeCharset.h */,
+				F1E2C08409AD762D00DA6872 /* MimeEnrichedReader.h */,
+				F1E2C08509AD762D00DA6872 /* MimeEnrichedWriter.h */,
+				F1E2C08609AD762D00DA6872 /* MimePart-DecodingSupport.h */,
+				F1E2C08709AD762D00DA6872 /* MimePart-IMAPSupport.h */,
+				F1E2C08809AD762D00DA6872 /* MimePart-MessageSupport.h */,
+				F1E2C08909AD762D00DA6872 /* MimePart-SMIMEExtensions.h */,
+				F1E2C08A09AD762D00DA6872 /* MimePart.h */,
+				F1E2C08B09AD762D00DA6872 /* MimeTextAttachment-IndexingSupport.h */,
+				F1E2C08C09AD762D00DA6872 /* MimeTextAttachment.h */,
+				F1E2C08D09AD762D00DA6872 /* MonitoredInvocation.h */,
+				F1E2C08E09AD762D00DA6872 /* MutableByteSet.h */,
+				F1E2C08F09AD762D00DA6872 /* MutableMessageHeaders.h */,
+				F1E2C09009AD762D00DA6872 /* NetworkController-Private.h */,
+				F1E2C09109AD762D00DA6872 /* NetworkController.h */,
+				F1E2C09309AD762D00DA6872 /* NeXTMbox.h */,
+				F1E2C09409AD762D00DA6872 /* NSAppleEventDescriptor-MailAdditions.h */,
+				F1E2C09509AD762D00DA6872 /* NSAppleScript-MessageRuleAdditions.h */,
+				F1E2C09609AD762D00DA6872 /* NSArray-AppleScriptConveniences.h */,
+				F1E2C09709AD762D00DA6872 /* NSArray-DateComparisonForRecents.h */,
+				F1E2C09809AD762D00DA6872 /* NSArray-DerivedArray.h */,
+				F1E2C09909AD762D00DA6872 /* NSArray-MessagesFromMixedStoresConvenience.h */,
+				F1E2C09A09AD762D00DA6872 /* NSArray-NSEmailAddressArray.h */,
+				F1E2C09B09AD762D00DA6872 /* NSArray-removeSelf.h */,
+				F1E2C09C09AD762D00DA6872 /* NSAttributedString-AddressingSupport.h */,
+				F1E2C09D09AD762D00DA6872 /* NSAttributedString-find_attribute.h */,
+				F1E2C09E09AD762D00DA6872 /* NSAttributedString-FontAdditions.h */,
+				F1E2C09F09AD762D00DA6872 /* NSAttributedString-FormatFlowedSupport.h */,
+				F1E2C0A009AD762D00DA6872 /* NSAttributedString-IndexingSupport.h */,
+				F1E2C0A109AD762D00DA6872 /* NSAttributedString-lockedRTFParsing.h */,
+				F1E2C0A209AD762D00DA6872 /* NSAttributedString-MessagePasteboardSupport.h */,
+				F1E2C0A309AD762D00DA6872 /* NSAttributedString-MimeEnrichedReader.h */,
+				F1E2C0A409AD762D00DA6872 /* NSAttributedString-MimeEnrichedWriter.h */,
+				F1E2C0A509AD762D00DA6872 /* NSAttributedString-plain_or_rich.h */,
+				F1E2C0A609AD762D00DA6872 /* NSBundle-MessageFrameworkAdditions.h */,
+				F1E2C0A709AD762D00DA6872 /* NSCharacterSet-NSCharacterSetUtils.h */,
+				F1E2C0A809AD762D00DA6872 /* NSCoder-MFMessageFlags.h */,
+				F1E2C0A909AD762E00DA6872 /* NSColor-NSColorUtilities.h */,
+				F1E2C0AA09AD762E00DA6872 /* NSData-HFSDataConversion.h */,
+				F1E2C0AB09AD762E00DA6872 /* NSData-MimeDataEncoding.h */,
+				F1E2C0AC09AD762E00DA6872 /* NSData-NSDataUtils.h */,
+				F1E2C0AD09AD762E00DA6872 /* NSData-UuEnDeCode.h */,
+				F1E2C0AE09AD762E00DA6872 /* NSDataMessageStore.h */,
+				F1E2C0AF09AD762E00DA6872 /* NSDate-Goodies.h */,
+				F1E2C0B009AD762E00DA6872 /* NSDate-toc_extension.h */,
+				F1E2C0B109AD762E00DA6872 /* NSDictionary-Goodies.h */,
+				F1E2C0B209AD762E00DA6872 /* NSError-MessageAdditions.h */,
+				F1E2C0B309AD762E00DA6872 /* NSError-MessageSignerSupport.h */,
+				F1E2C0B409AD762E00DA6872 /* NSEvent-MessageFrameworkAdditions.h */,
+				F1E2C0B509AD762E00DA6872 /* NSFileHandle-MessageAdditions.h */,
+				F1E2C0B609AD762E00DA6872 /* NSFileManager-NSFileManagerAdditions.h */,
+				F1E2C0B709AD762E00DA6872 /* NSFileWrapper-HFSDataConversion.h */,
+				F1E2C0B809AD762E00DA6872 /* NSFileWrapper-HFSExtensions.h */,
+				F1E2C0B909AD762E00DA6872 /* NSImage-ASBetterImageLookup.h */,
+				F1E2C0BA09AD762E00DA6872 /* NSInvocation-MailExtensions.h */,
+				F1E2C0BB09AD762E00DA6872 /* NSLock-MessageAdditions.h */,
+				F1E2C0BC09AD762E00DA6872 /* NSMailDelivery.h */,
+				F1E2C0BD09AD762E00DA6872 /* NSMutableArray-Convenience.h */,
+				F1E2C0BE09AD762E00DA6872 /* NSMutableArray-LockedAdditions.h */,
+				F1E2C0BF09AD762E00DA6872 /* NSMutableArray-SortedArrayExtensions.h */,
+				F1E2C0C009AD762E00DA6872 /* NSMutableAttributedString-MessageFrameworkAdditions.h */,
+				F1E2C0C109AD762E00DA6872 /* NSMutableAttributedString-WebHTMLAttachment.h */,
+				F1E2C0C209AD762E00DA6872 /* NSMutableData-MimeDataEncoding.h */,
+				F1E2C0C309AD762E00DA6872 /* NSMutableData-NSDataUtils.h */,
+				F1E2C0C409AD762E00DA6872 /* NSMutableData-RFC2231Support.h */,
+				F1E2C0C509AD762E00DA6872 /* NSMutableDictionary-Goodies.h */,
+				F1E2C0C609AD762E00DA6872 /* NSMutableDictionary-RFC2231Support.h */,
+				F1E2C0C709AD762E00DA6872 /* NSMutableSet-MessageAdditions.h */,
+				F1E2C0C909AD762E00DA6872 /* NSNotificationCenter-MainThreadPosting.h */,
+				F1E2C0CA09AD762E00DA6872 /* NSObject-LockingAdditions.h */,
+				F1E2C0CB09AD762E00DA6872 /* NSObject-MainThreadMessaging.h */,
+				F1E2C0CC09AD762E00DA6872 /* NSPrivateMessageClassForFindingBundle.h */,
+				F1E2C0CE09AD762E00DA6872 /* NSScanner-NSScannerUtils.h */,
+				F1E2C0CF09AD762E00DA6872 /* NSSound-MessageAdditions.h */,
+				F1E2C0D009AD762E00DA6872 /* NSString-FormatFlowedSupport.h */,
+				F1E2C0D109AD762E00DA6872 /* NSString-IMAPNameEncoding.h */,
+				F1E2C0D209AD762E00DA6872 /* NSString-MimeCharsetSupport.h */,
+				F1E2C0D309AD762E00DA6872 /* NSString-MimeEnrichedReader.h */,
+				F1E2C0D409AD762E00DA6872 /* NSString-MimeHeaderEncoding.h */,
+				F1E2C0D609AD762E00DA6872 /* NSString-NSEmailAddressString.h */,
+				F1E2C0D709AD762E00DA6872 /* NSString-NSStringUtils.h */,
+				F1E2C0D809AD762E00DA6872 /* NSString-PathUtils.h */,
+				F1E2C0DA09AD762E00DA6872 /* NSTableView-WhyIsntTheKitDoingThisForUs.h */,
+				F1E2C0DC09AD762E00DA6872 /* NSTextAttachment-IndexingSupport.h */,
+				F1E2C0DD09AD762E00DA6872 /* NSTextAttachment-MimeSupport.h */,
+				F1E2C0DE09AD762E00DA6872 /* NSTimeZone-HowAboutSomeNiceCaching.h */,
+				F1E2C0DF09AD762E00DA6872 /* ObjectCache.h */,
+				F1E2C0E009AD762E00DA6872 /* OutgoingMessage.h */,
+				F1E2C0E109AD762E00DA6872 /* PlaceholderFileWrapper.h */,
+				F1E2C0E209AD762E00DA6872 /* PlainAuthenticator.h */,
+				F1E2C0E309AD762E00DA6872 /* PlainAuthScheme.h */,
+				F1E2C0E409AD762E00DA6872 /* POP3Connection-PrivateCommands.h */,
+				F1E2C0E509AD762E00DA6872 /* POP3Connection.h */,
+				F1E2C0E609AD762E00DA6872 /* POP3FetchStore.h */,
+				F1E2C0E709AD762E00DA6872 /* POPAccount-Applescript.h */,
+				F1E2C0E809AD762E00DA6872 /* POPAccount.h */,
+				F1E2C0E909AD762E00DA6872 /* POPMessage.h */,
+				F1E2C0EA09AD762E00DA6872 /* RegularExpression.h */,
+				F1E2C0EB09AD762E00DA6872 /* SASLAuthenticator.h */,
+				F1E2C0EC09AD762E00DA6872 /* SMTPAccount-Applescript.h */,
+				F1E2C0ED09AD762E00DA6872 /* SMTPAccount.h */,
+				F1E2C0EE09AD762E00DA6872 /* SMTPConnection-PrivateCommands.h */,
+				F1E2C0EF09AD762E00DA6872 /* SMTPConnection.h */,
+				F1E2C0F009AD762E00DA6872 /* SMTPDelivery.h */,
+				F1E2C0F109AD762E00DA6872 /* SoundMenu.h */,
+				F1E2C0F209AD762E00DA6872 /* SoundPopUpButton.h */,
+				F1E2C0F309AD762E00DA6872 /* SpecialMailboxUid-AppleScript.h */,
+				F1E2C0F409AD762E00DA6872 /* SpecialMailboxUid.h */,
+				F1E2C0F509AD762E00DA6872 /* TableOfContents.h */,
+				F1E2C0F609AD762E00DA6872 /* TOCMessage.h */,
+				F1E2C0F709AD762E00DA6872 /* URLifier.h */,
+				F1E2C0F809AD762E00DA6872 /* URLMatch.h */,
+				F1E2C0F909AD762E00DA6872 /* UsageCounter.h */,
+				F1E2C0FA09AD762E00DA6872 /* WebHTMLAttachment.h */,
+				F1E2C0FB09AD762E00DA6872 /* WebMessageDocument.h */,
+				F1E2C0FC09AD762E00DA6872 /* WorkerThread.h */,
+			);
+			path = "Message.framework API";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* MIMEfix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MIMEfix" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+			};
+			dependencies = (
+			);
+			name = MIMEfix;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = MIMEfix;
+			productReference = 8D5B49B6048680CD000E48DA /* MIMEfix.mailbundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "MIMEfix" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA420018CDE011CA2923 /* Debug */,
+				014CEA430018CDE011CA2923 /* Release */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* MIMEfix */;
+			projectDirPath = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* MIMEfix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				F1FF558209AE133500EC55CB /* MIMEfixPreference.nib in Resources */,
+				F16CDC9009AF20ED0013A434 /* Defaults.plist in Resources */,
+				F16CDCFA09AF2A380013A434 /* MIMEfix.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E2BF5009AD74FA00DA6872 /* JMUtilities.m in Sources */,
+				F1E2BF5109AD74FA00DA6872 /* main.m in Sources */,
+				F1E2BF5209AD74FA00DA6872 /* MIMEfixbundle.m in Sources */,
+				F1FF552709ADF53300EC55CB /* MIMEfixPreferences.m in Sources */,
+				F118227A09AE965200EBF3AD /* base64.c in Sources */,
+				F118228909AE97CF00EBF3AD /* NSPreferences_MIMEfix.m in Sources */,
+				F118229409AE984B00EBF3AD /* MIMEPart_FixMime.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MIMEfix_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-force_flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PRODUCT_NAME = MIMEfix;
+				WRAPPER_EXTENSION = mailbundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MIMEfix_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-force_flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PRODUCT_NAME = MIMEfix;
+				WRAPPER_EXTENSION = mailbundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MIMEfix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "MIMEfix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
