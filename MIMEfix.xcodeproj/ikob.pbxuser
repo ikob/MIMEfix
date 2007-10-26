@@ -1,13 +1,12 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeBuildConfigurationName = Debug;
-		activeBuildStyle = 014CEA420018CDE011CA2923 /* Debug */;
+		activeArchitecture = i386;
+		activeBuildConfigurationName = Release;
 		activeTarget = 8D5B49AC048680CD000E48DA /* MIMEfix */;
 		addToTargets = (
 			8D5B49AC048680CD000E48DA /* MIMEfix */,
 		);
-		breakpointsGroup = F16CDC9109AF20EE0013A434 /* XCBreakpointsBucket */;
 		codeSenseManager = F1E2BF4909AD748D00DA6872 /* Code sense */;
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -78,8 +77,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 163055818;
-			PBXWorkspaceStateSaveDate = 163055818;
+			PBXPerProjectTemplateStateSaveDate = 215099386;
+			PBXWorkspaceStateSaveDate = 215099386;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -87,16 +86,18 @@
 	};
 	089C167EFE841241C02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1133, 1336}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1113, 896}}";
+			sepNavSelRange = "{104, 0}";
+			sepNavVisRange = "{0, 107}";
 			sepNavVisRect = "{{0, 0}, {1133, 1336}}";
-			sepNavWindowFrame = "{{1634, -87}, {1172, 1465}}";
+			sepNavWindowFrame = "{{494, 4}, {1172, 1024}}";
 		};
 	};
 	32DBCF630370AF2F00C91783 /* MIMEfix_Prefix.pch */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 862}}";
+			sepNavIntBoundsRect = "{{0, 0}, {832, 863}}";
 			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 146}";
 			sepNavVisRect = "{{0, 0}, {852, 862}}";
 			sepNavWindowFrame = "{{15, 32}, {891, 991}}";
 		};
@@ -106,26 +107,29 @@
 	};
 	8D5B49B7048680CD000E48DA /* Info.plist */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1026, 1371}}";
-			sepNavSelRange = "{348, 15}";
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 896}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 820}";
 			sepNavVisRect = "{{0, 0}, {1026, 1371}}";
-			sepNavWindowFrame = "{{1327, -102}, {1065, 1500}}";
+			sepNavWindowFrame = "{{510, 4}, {1065, 1024}}";
 		};
 	};
 	F118227809AE965200EBF3AD /* base64.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1427, 1362}}";
-			sepNavSelRange = "{151, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 896}}";
+			sepNavSelRange = "{96, 0}";
+			sepNavVisRange = "{0, 249}";
 			sepNavVisRect = "{{0, 0}, {1427, 1362}}";
-			sepNavWindowFrame = "{{1093, -45}, {1466, 1491}}";
+			sepNavWindowFrame = "{{1093, 4}, {1466, 1024}}";
 		};
 	};
 	F118227909AE965200EBF3AD /* base64.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1427, 1362}}";
-			sepNavSelRange = "{148, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 896}}";
+			sepNavSelRange = "{96, 0}";
+			sepNavVisRange = "{0, 1551}";
 			sepNavVisRect = "{{0, 0}, {1427, 1362}}";
-			sepNavWindowFrame = "{{1418, -90}, {1466, 1491}}";
+			sepNavWindowFrame = "{{815, -119}, {1466, 1024}}";
 		};
 	};
 	F118228709AE97CF00EBF3AD /* NSPreferences_MIMEfix.h */ = {
@@ -138,18 +142,20 @@
 	};
 	F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1427, 895}}";
-			sepNavSelRange = "{169, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 896}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 793}";
 			sepNavVisRect = "{{0, 0}, {1427, 895}}";
-			sepNavWindowFrame = "{{1187, -69}, {1466, 1024}}";
+			sepNavWindowFrame = "{{377, -7}, {1466, 1024}}";
 		};
 	};
 	F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1427, 699}}";
-			sepNavSelRange = "{0, 164}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 700}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 342}";
 			sepNavVisRect = "{{0, 0}, {1427, 699}}";
-			sepNavWindowFrame = "{{1343, 259}, {1466, 828}}";
+			sepNavWindowFrame = "{{515, 128}, {1466, 828}}";
 		};
 	};
 	F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */ = {
@@ -162,17 +168,12 @@
 	};
 	F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1026, 1371}}";
-			sepNavSelRange = "{212, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {1006, 896}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 232}";
 			sepNavVisRect = "{{0, 0}, {1026, 1371}}";
-			sepNavWindowFrame = "{{962, -112}, {1065, 1500}}";
+			sepNavWindowFrame = "{{410, -3}, {1065, 1024}}";
 		};
-	};
-	F16CDC9109AF20EE0013A434 /* XCBreakpointsBucket */ = {
-		isa = XCBreakpointsBucket;
-		name = "プロジェクトブレークポイント";
-		objects = (
-		);
 	};
 	F16CDCF909AF2A380013A434 /* MIMEfix.tiff */ = {
 		uiCtxt = {
@@ -181,10 +182,11 @@
 	};
 	F193D15D09ADC3B600A49216 /* NSPreferences.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {740, 3010}}";
-			sepNavSelRange = "{2517, 16}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 3052}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1758}";
 			sepNavVisRect = "{{0, 1107}, {740, 180}}";
-			sepNavWindowFrame = "{{734, 87}, {1466, 1491}}";
+			sepNavWindowFrame = "{{734, 4}, {1466, 1024}}";
 		};
 	};
 	F1E2BF4809AD748D00DA6872 /* Source Control */ = {
@@ -194,6 +196,7 @@
 		scmConfiguration = {
 			CVSToolPath = /usr/bin/ocvs;
 			CVSUseSSH = YES;
+			repositoryName = MIMEfix;
 		};
 		scmType = scm.cvs;
 	};
@@ -201,20 +204,29 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {827, 2184}}";
+			sepNavSelRange = "{2231, 37}";
+			sepNavVisRange = "{0, 1899}";
+		};
+	};
 	F1E2BF4E09AD74FA00DA6872 /* MIMEfixbundle.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1427, 699}}";
-			sepNavSelRange = "{0, 209}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 700}}";
+			sepNavSelRange = "{100, 0}";
+			sepNavVisRange = "{0, 412}";
 			sepNavVisRect = "{{0, 0}, {1427, 699}}";
-			sepNavWindowFrame = "{{1462, 448}, {1466, 828}}";
+			sepNavWindowFrame = "{{716, 142}, {1466, 828}}";
 		};
 	};
 	F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {855, 994}}";
-			sepNavSelRange = "{162, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {835, 938}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{321, 1455}";
 			sepNavVisRect = "{{0, 0}, {855, 699}}";
-			sepNavWindowFrame = "{{880, 406}, {894, 828}}";
+			sepNavWindowFrame = "{{359, 200}, {894, 828}}";
 		};
 	};
 	F1E2BFEA09AD757600DA6872 /* NSObject.h */ = {
@@ -243,10 +255,11 @@
 	};
 	F1FF552609ADF53300EC55CB /* MIMEfixPreferences.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 862}}";
-			sepNavSelRange = "{153, 14}";
+			sepNavIntBoundsRect = "{{0, 0}, {832, 863}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 512}";
 			sepNavVisRect = "{{0, 0}, {852, 862}}";
-			sepNavWindowFrame = "{{1325, 232}, {891, 991}}";
+			sepNavWindowFrame = "{{1325, 37}, {891, 991}}";
 		};
 	};
 }
