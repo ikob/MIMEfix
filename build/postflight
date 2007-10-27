@@ -5,5 +5,5 @@ mkdir ~/Library/Mail/Bundles
 cp -R /tmp/Bundles/MIMEfix.mailbundle ~/Library/Mail/Bundles/MIMEfix.mailbundle
 rm -rf /tmp/Bundles
 defaults write com.apple.mail EnableBundles 1
-defaults write com.apple.mail BundleCompatibilityVersion 2 
+defaults write com.apple.mail BundleCompatibilityVersion 3
 
