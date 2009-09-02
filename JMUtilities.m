@@ -5,6 +5,8 @@
 //  Created by Benjamin Han on 1/30/05.
 //  Copyright 2005 and onwards Benjamin Han. All rights reserved.
 //
+//  Modified by Katsushi Kobayashi 2006,2009
+//
 
 /*
  This program is free software; you can redistribute it and/or modify
@@ -63,11 +65,24 @@ NSString *resolveAliasFromFile (const NSString *path) {
 
 IMP replaceClassMethod (SEL aSelector, Class aClass, SEL newSelector, Class newClass) {
     Method aMethod, newMethod;
-    IMP anIMP;
+    IMP anIMP, newIMP;
     
     aMethod = class_getClassMethod(aClass, aSelector);
+	if(aMethod == NULL)
+		return NULL;
+	anIMP = method_getImplementation(aMethod);
+	
     newMethod = class_getClassMethod(newClass, newSelector);
-    
+	if(newMethod == NULL)
+		return NULL;	
+    newIMP =  method_getImplementation(newMethod);
+	method_setImplementation(aMethod, newIMP);
+	NSCAssert(method_getImplementation(aMethod) == newIMP, @"Replacement failed!");
+	return anIMP;
+/*	
+	method_setImplementation(aMethod, newIMP);
+	
+	
     if (NULL != aMethod && NULL != newMethod) {
         anIMP = aMethod->method_imp;
         aMethod->method_imp = newMethod->method_imp;
@@ -76,15 +91,27 @@ IMP replaceClassMethod (SEL aSelector, Class aClass, SEL newSelector, Class newC
     }
     
     return NULL;
+ */
 }
 
 IMP replaceInstanceMethod (SEL aSelector, Class aClass, SEL newSelector, Class newClass) {
     Method aMethod, newMethod;
-    IMP anIMP;
+    IMP anIMP, newIMP;
     
-    aMethod = class_getInstanceMethod(aClass, aSelector);
-    newMethod = class_getInstanceMethod(newClass, newSelector);
-    
+    aMethod = class_getClassMethod(aClass, aSelector);
+	if(aMethod == NULL)
+		return NULL;
+	anIMP = method_getImplementation(aMethod);
+	
+    newMethod = class_getClassMethod(newClass, newSelector);
+	if(newMethod == NULL)
+		return NULL;	
+    newIMP =  method_getImplementation(newMethod);
+	method_setImplementation(aMethod, newIMP);
+
+	NSCAssert(method_getImplementation(aMethod) == newIMP, @"Replacement failed!");
+	return anIMP;
+/*    
     if (NULL != aMethod && NULL != newMethod) {
         anIMP = aMethod->method_imp;
         aMethod->method_imp = newMethod->method_imp;
@@ -93,6 +120,7 @@ IMP replaceInstanceMethod (SEL aSelector, Class aClass, SEL newSelector, Class n
     }
     
     return NULL;
+ */
 }
 
 // Inserts menuItem to menu (or one of its submenus) under the item whose action 

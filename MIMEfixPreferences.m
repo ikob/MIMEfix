@@ -46,7 +46,7 @@
 - (void) awakeFromNib
 {
 	[versionTextField setStringValue:[NSString stringWithFormat:@"%@", [[MIMEfixMailBundle sharedInstance] version]]];
-	[contactTextField setStringValue:@"ikob@koganei.wide.ad.jp"];
+	[contactTextField setStringValue:@"shikob@mac.com"];
 }
 - (void) initializeFromDefaults {
     MIMEfixMailBundle *mailBundle = [MIMEfixMailBundle sharedInstance];
