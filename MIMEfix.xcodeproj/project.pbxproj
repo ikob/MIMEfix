@@ -28,7 +28,7 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF630370AF2F00C91783 /* MIMEfix_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEfix_Prefix.pch; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* MIMEfix.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIMEfix.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		F118227809AE965200EBF3AD /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		F118227909AE965200EBF3AD /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSPreferences_MIMEfix.m; sourceTree = "<group>"; };
 		F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEPart_FixMime.h; sourceTree = "<group>"; };
 		F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMEPart_FixMime.m; sourceTree = "<group>"; };
-		F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		F16CDCF909AF2A380013A434 /* MIMEfix.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MIMEfix.tiff; sourceTree = "<group>"; };
 		F193D15D09ADC3B600A49216 /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = NSPreferences.h; sourceTree = "<group>"; };
 		F1E2BF4B09AD74FA00DA6872 /* JMUtilities.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = JMUtilities.h; sourceTree = "<group>"; };
@@ -1026,10 +1026,8 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1042,6 +1040,8 @@
 					suppress,
 				);
 				PRODUCT_NAME = MIMEfix;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = mailbundle;
 			};
 			name = Release;

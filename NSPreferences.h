@@ -183,7 +183,7 @@
 @interface NSPreferencesModule:NSObject <NSPreferencesModule>
 {
     NSBox *_preferencesView;	// 4 = 0x4
-    struct _NSSize _minSize;	// 8 = 0x8
+    struct CGSize _minSize;	// 8 = 0x8
     char _hasChanges;	// 16 = 0x10
     void *_reserved;	// 20 = 0x14
 }

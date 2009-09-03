@@ -1,7 +1,7 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecture = i386;
+		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Release;
 		activeTarget = 8D5B49AC048680CD000E48DA /* MIMEfix */;
 		addToTargets = (
@@ -77,8 +77,20 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 215165946;
-			PBXWorkspaceStateSaveDate = 215165946;
+			PBXPerProjectTemplateStateSaveDate = 273557208;
+			PBXWorkspaceStateSaveDate = 273557208;
+		};
+		perUserProjectItems = {
+			F190005F104E26CA006615A0 = F190005F104E26CA006615A0 /* PlistBookmark */;
+			F1900060104E26CA006615A0 = F1900060104E26CA006615A0 /* PBXBookmark */;
+			F1900062104E26CA006615A0 = F1900062104E26CA006615A0 /* PlistBookmark */;
+			F1900086104E27BC006615A0 /* PlistBookmark */ = F1900086104E27BC006615A0 /* PlistBookmark */;
+			F1900087104E27BC006615A0 /* PlistBookmark */ = F1900087104E27BC006615A0 /* PlistBookmark */;
+			F1900095104E283B006615A0 /* PlistBookmark */ = F1900095104E283B006615A0 /* PlistBookmark */;
+			F1900098104E289E006615A0 /* PlistBookmark */ = F1900098104E289E006615A0 /* PlistBookmark */;
+			F19000A3104E2A18006615A0 /* PlistBookmark */ = F19000A3104E2A18006615A0 /* PlistBookmark */;
+			F19000EA104F44F9006615A0 /* XCBuildMessageTextBookmark */ = F19000EA104F44F9006615A0 /* XCBuildMessageTextBookmark */;
+			F19000EB104F44F9006615A0 /* PBXTextBookmark */ = F19000EB104F44F9006615A0 /* PBXTextBookmark */;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -182,11 +194,133 @@
 			sepNavWindowFrame = "{{15, 58}, {815, 769}}";
 		};
 	};
+	F190005F104E26CA006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/ikob/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	F1900060104E26CA006615A0 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = F1900061104E26CA006615A0 /* Info.plist */;
+	};
+	F1900061104E26CA006615A0 /* Info.plist */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = "/Users/ikob/MIMEfix+/trunk/Info.plist";
+		sourceTree = "<absolute>";
+	};
+	F1900062104E26CA006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = F1900063104E26CA006615A0 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/ikob/MIMEfix+/trunk/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	F1900063104E26CA006615A0 /* Info.plist */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.plist.xml;
+		name = Info.plist;
+		path = "/Users/ikob/MIMEfix+/trunk/Info.plist";
+		sourceTree = "<absolute>";
+	};
+	F1900086104E27BC006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = F1900063104E26CA006615A0 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/ikob/MIMEfix+/trunk/Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F1900087104E27BC006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			SupportedPluginCompatibilityUUIDs,
+			1,
+		);
+		name = /Users/ikob/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F1900095104E283B006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			SupportedPluginCompatibilityUUIDs,
+			1,
+		);
+		name = /Users/ikob/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F1900098104E289E006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			SupportedPluginCompatibilityUUIDs,
+			1,
+		);
+		name = /Users/ikob/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F19000A3104E2A18006615A0 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			SupportedPluginCompatibilityUUIDs,
+			1,
+		);
+		name = /Users/ikob/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	F19000EA104F44F9006615A0 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'MVMailBundle' may not respond to '+initialize'";
+		fRef = F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 23;
+		rType = 1;
+	};
+	F19000EB104F44F9006615A0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */;
+		name = "MIMEfixbundle.m: 24";
+		rLen = 0;
+		rLoc = 432;
+		rType = 0;
+		vrLen = 562;
+		vrLoc = 432;
+	};
 	F193D15D09ADC3B600A49216 /* NSPreferences.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1407, 3010}}";
-			sepNavSelRange = "{66, 15}";
-			sepNavVisRange = "{0, 1758}";
+			sepNavIntBoundsRect = "{{0, 0}, {611, 2860}}";
+			sepNavSelRange = "{5451, 0}";
+			sepNavVisRange = "{0, 0}";
 			sepNavVisRect = "{{0, 1107}, {740, 180}}";
 			sepNavWindowFrame = "{{422, -269}, {1466, 1024}}";
 		};
@@ -199,6 +333,9 @@
 			CVSToolPath = /usr/bin/ocvs;
 			CVSUseSSH = YES;
 			repositoryName = MIMEfix;
+			repositoryNamesForRoots = {
+				"" = MIMEfix;
+			};
 		};
 		scmType = scm.cvs;
 	};
@@ -241,9 +378,9 @@
 	};
 	F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {835, 938}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1258}";
+			sepNavIntBoundsRect = "{{0, 0}, {943, 936}}";
+			sepNavSelRange = "{432, 0}";
+			sepNavVisRange = "{432, 562}";
 			sepNavVisRect = "{{0, 0}, {855, 699}}";
 			sepNavWindowFrame = "{{359, 200}, {894, 828}}";
 		};
@@ -274,9 +411,9 @@
 	};
 	F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {817, 896}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1630}";
+			sepNavIntBoundsRect = "{{0, 0}, {838, 793}}";
+			sepNavSelRange = "{966, 0}";
+			sepNavVisRange = "{227, 1247}";
 			sepNavVisRect = "{{0, 0}, {837, 922}}";
 			sepNavWindowFrame = "{{545, 4}, {876, 1024}}";
 		};
