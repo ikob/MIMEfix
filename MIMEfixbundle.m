@@ -17,14 +17,28 @@
 
 static BOOL	MIMEfixWorks = YES;
 
+NSBundle *GetMyMVMailBundle(void) {
+	return [NSBundle bundleForClass:[MIMEfixMailBundle class]];
+}
+
 @implementation MIMEfixMailBundle
 + (void) initialize
 {
+#if 1
+	NSLog(@"Loading Bundle.");
+	[super initialize];
+	Class mvMailBundleClass = NSClassFromString(@"MVMailBundle");
+	class_setSuperclass([self class], mvMailBundleClass);
+	NSImage *image = [[NSImage alloc] initByReferencingFile:[GetMyMVMailBundle() pathForImageResource:@"MIMEfixMailBundle"]];
+	[image setName:@"MIMEfixMailBundle"];
+	[MIMEfixMailBundle registerBundle];
+#else
 	NSBundle *myBundle;
 	[super initialize];
 	myBundle = [NSBundle bundleForClass:self];
 	[(NSImage *)[[NSImage alloc] initByReferencingFile:[myBundle pathForImageResource:@"MIMEfix"]] setName:@"MIMEfix"];
 	[self registerBundle];
+#endif
 	NSLog(@"Loaded MIMEfixMailBundle. %@", [[[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"]
 		stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"$"]]);
 }

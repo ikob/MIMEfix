@@ -11,8 +11,11 @@
 #import <Cocoa/Cocoa.h>
 
 #import <MVMailBundle.h>
-
+#if 0
 @interface MIMEfixMailBundle : MVMailBundle
+#else
+@interface MIMEfixMailBundle : NSObject
+#endif
 + (BOOL) MIMEfixWorks;
 - (BOOL) MIMEfixWorks;
 - (BOOL) isEnabled;

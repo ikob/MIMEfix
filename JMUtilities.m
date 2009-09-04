@@ -98,12 +98,12 @@ IMP replaceInstanceMethod (SEL aSelector, Class aClass, SEL newSelector, Class n
     Method aMethod, newMethod;
     IMP anIMP, newIMP;
     
-    aMethod = class_getClassMethod(aClass, aSelector);
+    aMethod = class_getInstanceMethod(aClass, aSelector);
 	if(aMethod == NULL)
 		return NULL;
 	anIMP = method_getImplementation(aMethod);
 	
-    newMethod = class_getClassMethod(newClass, newSelector);
+    newMethod = class_getInstanceMethod(newClass, newSelector);
 	if(newMethod == NULL)
 		return NULL;	
     newIMP =  method_getImplementation(newMethod);
