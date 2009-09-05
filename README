@@ -1,0 +1,2 @@
+Create a diskimage
+hdiutil create -size 10m -fs HFS+ -volname MIMEfix-1.6 MIMEfix-1.6
