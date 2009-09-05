@@ -29,8 +29,8 @@ NSBundle *GetMyMVMailBundle(void) {
 	[super initialize];
 	Class mvMailBundleClass = NSClassFromString(@"MVMailBundle");
 	class_setSuperclass([self class], mvMailBundleClass);
-	NSImage *image = [[NSImage alloc] initByReferencingFile:[GetMyMVMailBundle() pathForImageResource:@"MIMEfixMailBundle"]];
-	[image setName:@"MIMEfixMailBundle"];
+	NSImage *image = [[NSImage alloc] initByReferencingFile:[GetMyMVMailBundle() pathForImageResource:@"MIMEfix"]];
+	[image setName:@"MIMEfix"];
 	[MIMEfixMailBundle registerBundle];
 #else
 	NSBundle *myBundle;

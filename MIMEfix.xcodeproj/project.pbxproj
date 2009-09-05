@@ -13,7 +13,7 @@
 		F118228909AE97CF00EBF3AD /* NSPreferences_MIMEfix.m in Sources */ = {isa = PBXBuildFile; fileRef = F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */; };
 		F118229409AE984B00EBF3AD /* MIMEPart_FixMime.m in Sources */ = {isa = PBXBuildFile; fileRef = F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */; };
 		F16CDC9009AF20ED0013A434 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = F16CDC8F09AF20ED0013A434 /* Defaults.plist */; };
-		F16CDCFA09AF2A380013A434 /* MIMEfix.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F16CDCF909AF2A380013A434 /* MIMEfix.tiff */; };
+		F16CDCFA09AF2A380013A434 /* MIMEfix.png in Resources */ = {isa = PBXBuildFile; fileRef = F16CDCF909AF2A380013A434 /* MIMEfix.png */; };
 		F1E2BF5009AD74FA00DA6872 /* JMUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */; };
 		F1E2BF5109AD74FA00DA6872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4D09AD74FA00DA6872 /* main.m */; };
 		F1E2BF5209AD74FA00DA6872 /* MIMEfixbundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */; };
@@ -37,7 +37,7 @@
 		F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMEPart_FixMime.h; sourceTree = "<group>"; };
 		F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMEPart_FixMime.m; sourceTree = "<group>"; };
 		F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
-		F16CDCF909AF2A380013A434 /* MIMEfix.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MIMEfix.tiff; sourceTree = "<group>"; };
+		F16CDCF909AF2A380013A434 /* MIMEfix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MIMEfix.png; sourceTree = "<group>"; };
 		F193D15D09ADC3B600A49216 /* NSPreferences.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = NSPreferences.h; sourceTree = "<group>"; };
 		F1E2BF4B09AD74FA00DA6872 /* JMUtilities.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; path = JMUtilities.h; sourceTree = "<group>"; };
 		F1E2BF4C09AD74FA00DA6872 /* JMUtilities.m */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.objc; path = JMUtilities.m; sourceTree = "<group>"; };
@@ -447,7 +447,7 @@
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
 				F1FF558109AE133500EC55CB /* MIMEfixPreference.nib */,
-				F16CDCF909AF2A380013A434 /* MIMEfix.tiff */,
+				F16CDCF909AF2A380013A434 /* MIMEfix.png */,
 			);
 			name = MIMEfix;
 			sourceTree = "<group>";
@@ -961,7 +961,7 @@
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				F1FF558209AE133500EC55CB /* MIMEfixPreference.nib in Resources */,
 				F16CDC9009AF20ED0013A434 /* Defaults.plist in Resources */,
-				F16CDCFA09AF2A380013A434 /* MIMEfix.tiff in Resources */,
+				F16CDCFA09AF2A380013A434 /* MIMEfix.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
