@@ -25,7 +25,7 @@ NSBundle *GetMyMVMailBundle(void) {
 + (void) initialize
 {
 #if 1
-	NSLog(@"Loading Bundle.");
+//	NSLog(@"Loading Bundle.");
 	[super initialize];
 	Class mvMailBundleClass = NSClassFromString(@"MVMailBundle");
 	class_setSuperclass([self class], mvMailBundleClass);
