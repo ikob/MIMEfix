@@ -77,15 +77,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 274402363;
-			PBXWorkspaceStateSaveDate = 274402363;
+			PBXPerProjectTemplateStateSaveDate = 279519392;
+			PBXWorkspaceStateSaveDate = 279519392;
 		};
 		perUserProjectItems = {
 			F1E5C360105B068F00AFF7FA = F1E5C360105B068F00AFF7FA /* PBXTextBookmark */;
 			F1E5C36E105B0C0600AFF7FA = F1E5C36E105B0C0600AFF7FA /* PlistBookmark */;
 			F1E5C36F105B0C0600AFF7FA = F1E5C36F105B0C0600AFF7FA /* PlistBookmark */;
 			F1E5C370105B0C0600AFF7FA = F1E5C370105B0C0600AFF7FA /* PlistBookmark */;
-			F1EAA783105B0C41009A7BBC /* PlistBookmark */ = F1EAA783105B0C41009A7BBC /* PlistBookmark */;
+			F1EAA783105B0C41009A7BBC = F1EAA783105B0C41009A7BBC /* PlistBookmark */;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -341,7 +341,7 @@
 		);
 		name = /Users/ikob/Documents/MIMEfix/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */ = {
 		uiCtxt = {
