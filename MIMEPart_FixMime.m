@@ -16,7 +16,7 @@ static IMP _old_dispositionParameterForKey_IMP = NULL;
 static NSString *filename = @"filename";
 static char csrc[150], cdst[150];
 
-//#define VERBOSE
+#define VERBOSE
 
 @implementation MimePart (FixMime)
 - (NSString *) fixFilenamme:(NSString *)src
@@ -70,9 +70,7 @@ static char csrc[150], cdst[150];
 #endif
 
 		NSRange mimerange = [tmp rangeOfString:@"ISO-2022-JP?B?" options:NSCaseInsensitiveSearch];
-#ifdef VERBOSE
 		NSLog(@"Mime %@", NSStringFromRange(mimerange));
-#endif
 		if(mimerange.location != NSNotFound){
 				mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
 				tmp = [tmp substringWithRange:mimerange];
@@ -95,10 +93,37 @@ static char csrc[150], cdst[150];
 #ifdef VERBOSE
 				NSLog(@"dst %@", dst);
 #endif
-		}else{
-			NSLog(@"NOT ISO-2022-JP %@", src);
-			goto out;
+			goto mime_exit;
 		}
+		mimerange = [tmp rangeOfString:@"UTF-8?B?" options:NSCaseInsensitiveSearch];
+		NSLog(@"Mime %@", NSStringFromRange(mimerange));
+		if(mimerange.location != NSNotFound){
+			mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
+			tmp = [tmp substringWithRange:mimerange];
+#ifdef VERBOSE
+			NSLog(@"tmp %@", tmp);
+#endif
+			[tmp getCString:csrc maxLength:150 encoding:NSASCIIStringEncoding];
+			if(decodeB64(csrc, cdst, 150) <= 0) goto out;
+#ifdef VERBOSE
+			NSLog(@"length %d %d", strlen(csrc), strlen(cdst));
+#endif
+			NSString *mdst = [NSString stringWithCString:cdst encoding:NSUTF8StringEncoding];
+#ifdef VERBOSE
+			NSLog(@"converted %@", mdst);
+#endif
+			if(mdst != NULL){
+				modified ++;
+				dst = [dst stringByAppendingString:mdst];
+			}
+#ifdef VERBOSE
+			NSLog(@"dst %@", dst);
+#endif
+			goto mime_exit;
+		}
+		NSLog(@"Not supported encodings %@", src);
+		goto out;
+mime_exit:
 #ifdef VERBOSE
 		NSLog(@"dst %@", dst);
 #endif
