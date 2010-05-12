@@ -16,7 +16,7 @@ static IMP _old_dispositionParameterForKey_IMP = NULL;
 static NSString *filename = @"filename";
 static char csrc[150], cdst[150];
 
-#define VERBOSE
+// #define VERBOSE
 
 @implementation MimePart (FixMime)
 - (NSString *) fixFilenamme:(NSString *)src
