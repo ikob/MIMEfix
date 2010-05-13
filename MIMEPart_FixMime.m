@@ -13,10 +13,12 @@
 #import "MIMEPart_FixMime.h"
 #import "JMUtilities.h"
 static IMP _old_dispositionParameterForKey_IMP = NULL;
+static IMP _old_bodyParameterForKey_IMP = NULL;
 static NSString *filename = @"filename";
 static char csrc[150], cdst[150];
 
-// #define VERBOSE
+#define VERBOSE
+#undef VERBOSE
 
 @implementation MimePart (FixMime)
 - (NSString *) fixFilenamme:(NSString *)src
@@ -149,17 +151,33 @@ out:
 + (void) load {
 	_old_dispositionParameterForKey_IMP = replaceInstanceMethod(@selector(dispositionParameterForKey:), self,
 											@selector(fixdispositionParameterForKey:), self);
-//	NSLog(@"MIMEfix loaded");
+//	_old_bodyParameterForKey_IMP = replaceInstanceMethod(@selector(bodyParameterForKey:), self,
+//																@selector(fixbodyParameterForKey:), self);
+#ifdef VERBOSE
+	NSLog(@"MIMEfix loaded");
+#endif
+}
+
+- (id) fixbodyParameterForKey:(id)fp8 {
+	NSString *src;
+	src = (*_old_bodyParameterForKey_IMP)(self, _cmd, fp8);
+#ifdef VERBOSE
+	NSLog(@"bodyParameterForKey_IMP %@:%@.", fp8, src);
+#endif
+	return (*_old_bodyParameterForKey_IMP)(self, _cmd, fp8);
 }
 
 - (id) fixdispositionParameterForKey:(id)fp8 {
-	NSString *src, *dst /*, *fallback */;
+	NSString *original, *src, *dst /*, *fallback */;
 	NSRange space;
 	BOOL modified = NO;
 	NSString *ext;
+	BOOL prefername = YES;
+#if 0
 	src = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	if(src == NULL)
 		return NULL;
+#endif
 	if([filename caseInsensitiveCompare:(NSString *)fp8] != NSOrderedSame){
 			return  (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	}
@@ -169,14 +187,29 @@ out:
 	}else{
 //			NSLog(@"NSUserDefaults is enabled, try to interpret it.");
 	}
+	
+	original = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
+	src = original;
 #ifdef VERBOSE
+	NSLog(@"Keys %@.", fp8);
+	NSLog(@"bodyParameters %@.", [self bodyParameterKeys]);
+	NSLog(@"bodyParameterForKey %@.", [self bodyParameterForKey:@"name"]);	
+	NSLog(@"DispositionParameters %@.", [self dispositionParameterKeys]);
 	NSLog(@"DispositionParameterForKey %@:%@.", fp8, src);
 	NSLog(@"MIME type/sub-type:%@/%@.", [self type], [self subtype]);
 #endif
+	if(prefername == YES){
+		src = [self bodyParameterForKey:@"name"];
+	}
+	if(src == NULL)
+		return NULL;
+	
 	dst = [self fixFilenamme:src];
 //	NSLog(@"dst %@", dst);
 	space = [dst rangeOfString:@"@" options:NSBackwardsSearch];
-	if(dst != NULL && space.location != ([dst length] - 1)){
+	if(prefername == YES){
+		modified = YES;
+	}else if(dst != NULL && space.location != ([dst length] - 1)){
 		modified = YES;
 	}else if((dst = [self bodyParameterForKey:@"name"]) != NULL){
 		space = [dst rangeOfString:@"@" options:NSBackwardsSearch];
@@ -184,6 +217,7 @@ out:
 			modified = YES;
 		}
 	}
+
 	if(modified == YES){
 		NSString *oext = NULL;
 		UniCharCount c;
@@ -204,8 +238,9 @@ out:
 				dst = [dst stringByAppendingString:ext];
 			}
 		}
-		if(src != NULL && [src compare:dst] != NSOrderedSame){
-			NSLog(@"Filename changed from \"%@\" to \"%@\".", src, dst);
+//		if(src != NULL && [src compare:dst] != NSOrderedSame){
+		if(dst != NULL){
+			NSLog(@"Filename is updated \"%@\" to \"%@\".", original, dst);
 			[self setDispositionParameter:dst forKey:fp8];
 		}
 	}
