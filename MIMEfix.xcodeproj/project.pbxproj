@@ -475,9 +475,9 @@
 			isa = PBXGroup;
 			children = (
 				F1E2BF4E09AD74FA00DA6872 /* MIMEfixbundle.h */,
+				F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */,
 				F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */,
 				F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */,
-				F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */,
 				F118227809AE965200EBF3AD /* base64.h */,
 				F118227909AE965200EBF3AD /* base64.c */,
 				F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */,

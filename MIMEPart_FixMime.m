@@ -72,7 +72,9 @@ static char csrc[150], cdst[150];
 #endif
 
 		NSRange mimerange = [tmp rangeOfString:@"ISO-2022-JP?B?" options:NSCaseInsensitiveSearch];
+#ifdef VERBOSE
 		NSLog(@"Mime %@", NSStringFromRange(mimerange));
+#endif
 		if(mimerange.location != NSNotFound){
 				mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
 				tmp = [tmp substringWithRange:mimerange];
@@ -172,7 +174,7 @@ out:
 	NSRange space;
 	BOOL modified = NO;
 	NSString *ext;
-	BOOL prefername = YES;
+	BOOL prefername = NO;
 #if 0
 	src = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	if(src == NULL)
@@ -186,6 +188,9 @@ out:
 			return  (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	}else{
 //			NSLog(@"NSUserDefaults is enabled, try to interpret it.");
+	}
+	if([[NSUserDefaults standardUserDefaults] boolForKey:@"MIMEfixPreferName"] == YES){
+		prefername = YES;
 	}
 	
 	original = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);

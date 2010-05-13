@@ -18,6 +18,8 @@
     IBOutlet NSTextField	*contactTextField;
 
     IBOutlet id enableMIMEfixButton;
+	IBOutlet id enableMIMEfixPreferName;
 }
 - (IBAction)toggleMIMEfixEnable:(id)sender;
+- (IBAction)toggleMIMEfixPreferName:(id)sender;
 @end

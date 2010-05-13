@@ -77,4 +77,10 @@ NSBundle *GetMyMVMailBundle(void) {
 - (void) setEnabled:(BOOL) yesOrNo {
     [[NSUserDefaults standardUserDefaults] setBool:yesOrNo forKey:@"MIMEfixEnable"];
 }
+- (BOOL) isPreferName {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:@"MIMEfixPreferName"];
+}
+- (void) setPreferName:(BOOL) yesOrNo {
+    [[NSUserDefaults standardUserDefaults] setBool:yesOrNo forKey:@"MIMEfixPreferName"];
+}
 @end

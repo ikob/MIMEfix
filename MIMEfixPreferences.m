@@ -53,9 +53,14 @@
 //    NSLog(@"MIMEfixPreferences Init from default");
 	[super initializeFromDefaults];
 	[enableMIMEfixButton setState:([mailBundle isEnabled]?NSOnState:NSOffState)];
+	[enableMIMEfixPreferName setState:([mailBundle isPreferName]?NSOnState:NSOffState)];
 }
 - (IBAction) toggleMIMEfixEnable:(id)sender
 {
 	[[MIMEfixMailBundle sharedInstance] setEnabled:([enableMIMEfixButton state] == NSOnState)];
+}
+- (IBAction) toggleMIMEfixPreferName:(id)sender
+{
+	[[MIMEfixMailBundle sharedInstance] setPreferName:([enableMIMEfixPreferName state] == NSOnState)];
 }
 @end

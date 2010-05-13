@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Copying your home directory......"
+rm -rf ~/Library/Mail/Bundles/MIMEfix.mailbundle
+if [ -d ~/Library/Mail/Bundles ]; then
+    echo "already have Bundle"
+else
+    mkdir ~/Library/Mail/Bundles
+fi
+cp -R /tmp/Bundles/MIMEfix.mailbundle ~/Library/Mail/Bundles/MIMEfix.mailbundle
+rm -rf /tmp/Bundles
+defaults write com.apple.mail EnableBundles 1
+defaults write com.apple.mail BundleCompatibilityVersion 3
+defaults write com.apple.mail MIMEfixEnable 1
+defaults write com.apple.mail MIMEfixPreferName 0

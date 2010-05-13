@@ -20,4 +20,6 @@
 - (BOOL) MIMEfixWorks;
 - (BOOL) isEnabled;
 - (void) setEnabled:(BOOL)flag;
+- (BOOL) isPreferName;
+- (BOOL) setPrefername:(BOOL)flag;
 @end
