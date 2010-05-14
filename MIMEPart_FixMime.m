@@ -100,7 +100,9 @@ static char csrc[150], cdst[150];
 			goto mime_exit;
 		}
 		mimerange = [tmp rangeOfString:@"UTF-8?B?" options:NSCaseInsensitiveSearch];
+#ifdef VERBOSE
 		NSLog(@"Mime %@", NSStringFromRange(mimerange));
+#endif
 		if(mimerange.location != NSNotFound){
 			mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
 			tmp = [tmp substringWithRange:mimerange];
@@ -175,7 +177,7 @@ out:
 	BOOL modified = NO;
 	NSString *ext;
 	BOOL prefername = NO;
-#if 0
+#if 1
 	src = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	if(src == NULL)
 		return NULL;
@@ -192,8 +194,14 @@ out:
 	if([[NSUserDefaults standardUserDefaults] boolForKey:@"MIMEfixPreferName"] == YES){
 		prefername = YES;
 	}
-	
+#if 1
+	original = src;
+#else
 	original = (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
+	if(original == NULL){
+		return NULL;
+	}
+#endif
 	src = original;
 #ifdef VERBOSE
 	NSLog(@"Keys %@.", fp8);
@@ -244,7 +252,7 @@ out:
 			}
 		}
 //		if(src != NULL && [src compare:dst] != NSOrderedSame){
-		if(dst != NULL){
+		if(dst != NULL && [dst compare:original] != NSOrderedSame){
 			NSLog(@"Filename is updated \"%@\" to \"%@\".", original, dst);
 			[self setDispositionParameter:dst forKey:fp8];
 		}
