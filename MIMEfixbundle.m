@@ -41,7 +41,7 @@ NSBundle *GetMyMVMailBundle(void) {
 #endif
 	NSLog(@"Loaded MIMEfixMailBundle. %@", [[[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"]
 		stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"$"]]);
-#if 0	
+#if 0
 	NSDictionary* infoDictionary = [[NSBundle bundleForClass:[self class]] infoDictionary];
 	NSLog(@"%i Keys:  %@", [infoDictionary count], [infoDictionary allKeys]);
 #endif
