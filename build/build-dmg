@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+	echo "rquire package name"
+	exit 1
+fi
+hdiutil create -size 1m -fs HFS+ -volname $1 -attach -o ~/Desktop/$1.dmg
+
