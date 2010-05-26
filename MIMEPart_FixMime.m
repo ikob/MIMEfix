@@ -17,9 +17,6 @@ static IMP _old_bodyParameterForKey_IMP = NULL;
 static NSString *filename = @"filename";
 static char csrc[150], cdst[150];
 
-#define VERBOSE
-#undef VERBOSE
-
 @implementation MimePart (FixMime)
 - (NSString *) fixFilenamme:(NSString *)src
 {
@@ -33,26 +30,26 @@ static char csrc[150], cdst[150];
 	srange = [src rangeOfString:@"=?" options:NSLiteralSearch range:limitrange];
 	while(srange.location != NSNotFound){
 		crange = NSMakeRange(erange.location + erange.length, srange.location - erange.location - erange.length);
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Start Founded %@ %@ %@", NSStringFromRange(srange), NSStringFromRange(crange), NSStringFromRange(limitrange));
 #endif
 		tmp = [src substringWithRange:crange];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Outside of MIME %@", tmp);
 #endif
 		space = [tmp rangeOfString:@" " options:NSBackwardsSearch];
 		if(space.location == [tmp length] - 1 ){
 		tmp = [tmp substringToIndex:space.location];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Chop trailing space %@", tmp);
 #endif
 		}
 		dst = [dst stringByAppendingString:tmp];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"dst %@", dst);
 #endif
 		limitrange = NSMakeRange(srange.location + srange.length, [src length] - srange.location - srange.length);
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Forward %@", NSStringFromRange(limitrange));
 #endif
 
@@ -63,66 +60,66 @@ static char csrc[150], cdst[150];
 		limitrange = NSMakeRange(erange.location + erange.length, [src length] - erange.location - erange.length);
 
 		crange = NSMakeRange(srange.location + srange.length, erange.location - srange.location - srange.length);
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"End Founded %@ %@ %@", NSStringFromRange(erange), NSStringFromRange(crange), NSStringFromRange(limitrange));
 #endif
 		tmp = [src substringWithRange:crange];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Inside of MIME %@", tmp);
 #endif
 
 		NSRange mimerange = [tmp rangeOfString:@"ISO-2022-JP?B?" options:NSCaseInsensitiveSearch];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Mime %@", NSStringFromRange(mimerange));
 #endif
 		if(mimerange.location != NSNotFound){
 				mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
 				tmp = [tmp substringWithRange:mimerange];
-#ifdef VERBOSE
+#ifdef DEBUG
 				NSLog(@"tmp %@", tmp);
 #endif
 				[tmp getCString:csrc maxLength:150 encoding:NSASCIIStringEncoding];
 				if(decodeB64(csrc, cdst, 150) <= 0) goto out;
-#ifdef VERBOSE
+#ifdef DEBUG
 				NSLog(@"length %d %d", strlen(csrc), strlen(cdst));
 #endif
 				NSString *mdst = [NSString stringWithCString:cdst encoding:NSISO2022JPStringEncoding];
-#ifdef VERBOSE
+#ifdef DEBUG
 				NSLog(@"converted %@", mdst);
 #endif
 				if(mdst != NULL){
 					modified ++;
 					dst = [dst stringByAppendingString:mdst];
 				}
-#ifdef VERBOSE
+#ifdef DEBUG
 				NSLog(@"dst %@", dst);
 #endif
 			goto mime_exit;
 		}
 		mimerange = [tmp rangeOfString:@"UTF-8?B?" options:NSCaseInsensitiveSearch];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Mime %@", NSStringFromRange(mimerange));
 #endif
 		if(mimerange.location != NSNotFound){
 			mimerange = NSMakeRange(mimerange.location + mimerange.length, [tmp length] - mimerange.location - mimerange.length);
 			tmp = [tmp substringWithRange:mimerange];
-#ifdef VERBOSE
+#ifdef DEBUG
 			NSLog(@"tmp %@", tmp);
 #endif
 			[tmp getCString:csrc maxLength:150 encoding:NSASCIIStringEncoding];
 			if(decodeB64(csrc, cdst, 150) <= 0) goto out;
-#ifdef VERBOSE
+#ifdef DEBUG
 			NSLog(@"length %d %d", strlen(csrc), strlen(cdst));
 #endif
 			NSString *mdst = [NSString stringWithCString:cdst encoding:NSUTF8StringEncoding];
-#ifdef VERBOSE
+#ifdef DEBUG
 			NSLog(@"converted %@", mdst);
 #endif
 			if(mdst != NULL){
 				modified ++;
 				dst = [dst stringByAppendingString:mdst];
 			}
-#ifdef VERBOSE
+#ifdef DEBUG
 			NSLog(@"dst %@", dst);
 #endif
 			goto mime_exit;
@@ -130,19 +127,19 @@ static char csrc[150], cdst[150];
 		NSLog(@"Not supported encodings %@", src);
 		goto out;
 mime_exit:
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"dst %@", dst);
 #endif
 		srange = [src rangeOfString:@"=?" options:NSLiteralSearch range:limitrange];
 	}
 	tmp = [src substringWithRange:limitrange];
-#ifdef VERBOSE
+#ifdef DEBUG
 	NSLog(@"Outside of ISO-2022 %@", tmp);
 #endif
 	space = [tmp rangeOfString:@" " ];
 	if(space.location == 0 ){
 		tmp = [tmp substringFromIndex:space.location];
-#ifdef VERBOSE
+#ifdef DEBUG
 		NSLog(@"Chop starting space %@", tmp);
 #endif
 	}
@@ -157,7 +154,7 @@ out:
 											@selector(fixdispositionParameterForKey:), self);
 //	_old_bodyParameterForKey_IMP = replaceInstanceMethod(@selector(bodyParameterForKey:), self,
 //																@selector(fixbodyParameterForKey:), self);
-#ifdef VERBOSE
+#ifdef DEBUG
 	NSLog(@"MIMEfix loaded");
 #endif
 }
@@ -165,7 +162,7 @@ out:
 - (id) fixbodyParameterForKey:(id)fp8 {
 	NSString *src;
 	src = (*_old_bodyParameterForKey_IMP)(self, _cmd, fp8);
-#ifdef VERBOSE
+#ifdef DEBUG
 	NSLog(@"bodyParameterForKey_IMP %@:%@.", fp8, src);
 #endif
 	return (*_old_bodyParameterForKey_IMP)(self, _cmd, fp8);
@@ -203,7 +200,7 @@ out:
 	}
 #endif
 	src = original;
-#ifdef VERBOSE
+#ifdef DEBUG
 	NSLog(@"Keys %@.", fp8);
 	NSLog(@"bodyParameters %@.", [self bodyParameterKeys]);
 	NSLog(@"bodyParameterForKey %@.", [self bodyParameterForKey:@"name"]);	

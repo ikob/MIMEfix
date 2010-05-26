@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -942,7 +942,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "MIMEfix" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* MIMEfix */;
 			projectDirPath = "";
@@ -1026,8 +1026,7 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1040,7 +1039,7 @@
 					suppress,
 				);
 				PRODUCT_NAME = MIMEfix;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 x86_64";
 				WRAPPER_EXTENSION = mailbundle;
 			};
@@ -1051,21 +1050,23 @@
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG";
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};

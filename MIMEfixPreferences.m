@@ -16,13 +16,17 @@
 @implementation MIMEfixPreferences
 
 - preferencesNibName {
-//	NSLog(@"MIMEfixPreferences preferencesNibName called");
+#ifdef DEBUG
+	NSLog(@"MIMEfixPreferences preferencesNibName called");
+#endif
     return @"MIMEfixPreference";
 }
 
 - viewForPreferenceNamed:(NSString *) aName {
 	if(_preferencesView == nil) {
-//		NSLog(@"MIMEfixPreferences viewForPreferenceNamed called ... loading nib");
+#ifdef DEBUG
+		NSLog(@"MIMEfixPreferences viewForPreferenceNamed called ... loading nib");
+#endif
 		[NSBundle loadNibNamed:[self preferencesNibName] owner:self];
 	}
 	return _preferencesView;
@@ -30,12 +34,16 @@
 
 - (NSImage *) imageForPreferenceNamed:(NSString *)aName
 {
-//	NSLog(@"MIMEfixPreferences Loading image %@", aName);
+#ifdef DEBUG
+	NSLog(@"MIMEfixPreferences Loading image %@", aName);
+#endif
     return [NSImage imageNamed:@"MIMEfix"];
 }
 
 - titleForIdentifier:aName {
-//	NSLog(@"MIMEfixPreferences titleForIdentifier");
+#ifdef DEBUG
+	NSLog(@"MIMEfixPreferences titleForIdentifier");
+#endif
     return @"MIMEfix";
 }
 
@@ -50,7 +58,9 @@
 }
 - (void) initializeFromDefaults {
     MIMEfixMailBundle *mailBundle = [MIMEfixMailBundle sharedInstance];
-//    NSLog(@"MIMEfixPreferences Init from default");
+#ifdef DEBUG
+    NSLog(@"MIMEfixPreferences Init from default");
+#endif
 	[super initializeFromDefaults];
 	[enableMIMEfixButton setState:([mailBundle isEnabled]?NSOnState:NSOffState)];
 	[enableMIMEfixPreferName setState:([mailBundle isPreferName]?NSOnState:NSOffState)];

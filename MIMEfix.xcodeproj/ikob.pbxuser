@@ -1,8 +1,8 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecturePreference = x86_64;
-		activeBuildConfigurationName = Release;
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
 		activeTarget = 8D5B49AC048680CD000E48DA /* MIMEfix */;
 		addToTargets = (
 			8D5B49AC048680CD000E48DA /* MIMEfix */,
@@ -14,7 +14,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					965,
+					433,
 					20,
 					48,
 					43,
@@ -93,16 +93,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 295537285;
-			PBXWorkspaceStateSaveDate = 295537285;
-		};
-		perUserProjectItems = {
-			F1AF2B96119D8E8000131904 /* PBXTextBookmark */ = F1AF2B96119D8E8000131904 /* PBXTextBookmark */;
-			F1AF2B97119D8E8000131904 /* PBXTextBookmark */ = F1AF2B97119D8E8000131904 /* PBXTextBookmark */;
-			F1AF2B9F119D8E9C00131904 /* PBXTextBookmark */ = F1AF2B9F119D8E9C00131904 /* PBXTextBookmark */;
-			F1AF2BA0119D8E9C00131904 /* PBXTextBookmark */ = F1AF2BA0119D8E9C00131904 /* PBXTextBookmark */;
-			F1AF2BA1119D8E9C00131904 /* PlistBookmark */ = F1AF2BA1119D8E9C00131904 /* PlistBookmark */;
-			F1AF2BA2119D8E9C00131904 /* PlistBookmark */ = F1AF2BA2119D8E9C00131904 /* PlistBookmark */;
+			PBXPerProjectTemplateStateSaveDate = 296578504;
+			PBXWorkspaceStateSaveDate = 296578504;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -167,11 +159,11 @@
 	};
 	F118228809AE97CF00EBF3AD /* NSPreferences_MIMEfix.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1069, 1002}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1407, 896}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 1990}";
 			sepNavVisRect = "{{0, 0}, {1427, 895}}";
-			sepNavWindowFrame = "{{455, 108}, {1466, 1024}}";
+			sepNavWindowFrame = "{{214, 4}, {1466, 1024}}";
 		};
 	};
 	F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {
@@ -185,11 +177,11 @@
 	};
 	F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1143, 3874}}";
-			sepNavSelRange = "{3419, 5}";
-			sepNavVisRange = "{2594, 1609}";
+			sepNavIntBoundsRect = "{{0, 0}, {1113, 3783}}";
+			sepNavSelRange = "{487, 0}";
+			sepNavVisRange = "{38, 2303}";
 			sepNavVisRect = "{{0, 0}, {1133, 895}}";
-			sepNavWindowFrame = "{{1121, 554}, {1172, 1024}}";
+			sepNavWindowFrame = "{{337, 4}, {1172, 1024}}";
 		};
 	};
 	F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {
@@ -214,65 +206,6 @@
 			sepNavVisRect = "{{0, 1107}, {740, 180}}";
 			sepNavWindowFrame = "{{422, -269}, {1466, 1024}}";
 		};
-	};
-	F1AF2B96119D8E8000131904 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */;
-		rLen = 5;
-		rLoc = 3419;
-		rType = 0;
-	};
-	F1AF2B97119D8E8000131904 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */;
-		name = "MIMEPart_FixMime.m: 105";
-		rLen = 0;
-		rLoc = 3474;
-		rType = 0;
-		vrLen = 1115;
-		vrLoc = 2811;
-	};
-	F1AF2B9F119D8E9C00131904 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */;
-		name = "MIMEfixPreferences.m: 64";
-		rLen = 0;
-		rLoc = 1803;
-		rType = 0;
-		vrLen = 713;
-		vrLoc = 1146;
-	};
-	F1AF2BA0119D8E9C00131904 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F118229309AE984B00EBF3AD /* MIMEPart_FixMime.m */;
-		name = "MIMEPart_FixMime.m: 104";
-		rLen = 5;
-		rLoc = 3419;
-		rType = 0;
-		vrLen = 1609;
-		vrLoc = 2594;
-	};
-	F1AF2BA1119D8E9C00131904 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/ikob/MIMEfix/Info.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	F1AF2BA2119D8E9C00131904 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = /Users/ikob/MIMEfix/Info.plist;
-		rLen = 0;
-		rLoc = 9223372036854775807;
 	};
 	F1E2BF4809AD748D00DA6872 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -327,11 +260,11 @@
 	};
 	F1E2BF4F09AD74FA00DA6872 /* MIMEfixbundle.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {943, 1131}}";
-			sepNavSelRange = "{2473, 0}";
-			sepNavVisRange = "{686, 1798}";
+			sepNavIntBoundsRect = "{{0, 0}, {1131, 1313}}";
+			sepNavSelRange = "{530, 0}";
+			sepNavVisRange = "{220, 1825}";
 			sepNavVisRect = "{{0, 0}, {855, 699}}";
-			sepNavWindowFrame = "{{964, 325}, {1190, 1253}}";
+			sepNavWindowFrame = "{{362, 4}, {1190, 1024}}";
 		};
 	};
 	F1E2BFDA09AD757600DA6872 /* MVMailBundle.h */ = {
@@ -367,11 +300,11 @@
 	};
 	F1FF552509ADF53300EC55CB /* MIMEfixPreferences.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {838, 858}}";
-			sepNavSelRange = "{1803, 0}";
-			sepNavVisRange = "{1146, 713}";
+			sepNavIntBoundsRect = "{{0, 0}, {1049, 988}}";
+			sepNavSelRange = "{945, 0}";
+			sepNavVisRange = "{227, 1722}";
 			sepNavVisRect = "{{0, 0}, {837, 922}}";
-			sepNavWindowFrame = "{{534, 580}, {1108, 998}}";
+			sepNavWindowFrame = "{{534, 30}, {1108, 998}}";
 		};
 	};
 	F1FF552609ADF53300EC55CB /* MIMEfixPreferences.h */ = {

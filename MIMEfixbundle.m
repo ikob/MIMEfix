@@ -25,7 +25,9 @@ NSBundle *GetMyMVMailBundle(void) {
 + (void) initialize
 {
 #if 1
-//	NSLog(@"Loading Bundle.");
+#ifdef DEBUG
+	NSLog(@"Loading Bundle.");
+#endif
 	[super initialize];
 	Class mvMailBundleClass = NSClassFromString(@"MVMailBundle");
 	class_setSuperclass([self class], mvMailBundleClass);
@@ -49,12 +51,16 @@ NSBundle *GetMyMVMailBundle(void) {
 
 + (BOOL) hasPreferencesPanel
 {
-//	NSLog(@"Has Preference.");
+#ifdef DEBUG
+	NSLog(@"Has Preference.");
+#endif
 	return MIMEfixWorks;
 }
 + (NSString *) preferencesOwnerClassName
 {
-//	NSLog(@"Respond Preference owner class name %@.", NSStringFromClass([MIMEfixPreferences class]));
+#ifdef DEBUG
+	NSLog(@"Respond Preference owner class name %@.", NSStringFromClass([MIMEfixPreferences class]));
+#endif
     return NSStringFromClass([MIMEfixPreferences class]);
 }
 + (BOOL) MIMEfixWorks
