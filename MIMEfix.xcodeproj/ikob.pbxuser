@@ -1,8 +1,9 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecturePreference = i386;
+		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Debug;
+		activeSDKPreference = macosx10.6;
 		activeTarget = 8D5B49AC048680CD000E48DA /* MIMEfix */;
 		addToTargets = (
 			8D5B49AC048680CD000E48DA /* MIMEfix */,
@@ -93,8 +94,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 296578504;
-			PBXWorkspaceStateSaveDate = 296578504;
+			PBXPerProjectTemplateStateSaveDate = 296623731;
+			PBXWorkspaceStateSaveDate = 296623731;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
