@@ -94,14 +94,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 298381684;
-			PBXWorkspaceStateSaveDate = 298381684;
+			PBXPerProjectTemplateStateSaveDate = 298389869;
+			PBXWorkspaceStateSaveDate = 298389869;
 		};
 		perUserProjectItems = {
-			F1664B5011C8F18600F8F915 /* PBXBookmark */ = F1664B5011C8F18600F8F915 /* PBXBookmark */;
-			F1664B5111C8F18C00F8F915 /* PBXBookmark */ = F1664B5111C8F18C00F8F915 /* PBXBookmark */;
-			F1664B5211C8F18C00F8F915 /* PlistBookmark */ = F1664B5211C8F18C00F8F915 /* PlistBookmark */;
-			F1664B5811C8F18C00F8F915 /* PlistBookmark */ = F1664B5811C8F18C00F8F915 /* PlistBookmark */;
+			F1664B5011C8F18600F8F915 = F1664B5011C8F18600F8F915 /* PBXBookmark */;
+			F1664B5111C8F18C00F8F915 = F1664B5111C8F18C00F8F915 /* PBXBookmark */;
+			F1664B5211C8F18C00F8F915 = F1664B5211C8F18C00F8F915 /* PlistBookmark */;
+			F1664B5811C8F18C00F8F915 = F1664B5811C8F18C00F8F915 /* PlistBookmark */;
+			F1DC013611C91189007662EE /* PlistBookmark */ = F1DC013611C91189007662EE /* PlistBookmark */;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -134,7 +135,7 @@
 			sepNavSelRange = "{656, 0}";
 			sepNavVisRange = "{0, 816}";
 			sepNavVisRect = "{{0, 0}, {1026, 1371}}";
-			sepNavWindowFrame = "{{615, 126}, {1065, 774}}";
+			sepNavWindowFrame = "{{180, 4}, {1065, 774}}";
 		};
 	};
 	F118227809AE965200EBF3AD /* base64.h */ = {
@@ -208,7 +209,7 @@
 		);
 		name = /Users/ikob/Desktop/MIMEfix/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	F1664B5811C8F18C00F8F915 /* PlistBookmark */ = {
 		isa = PlistBookmark;
@@ -219,7 +220,7 @@
 		);
 		name = /Users/ikob/Desktop/MIMEfix/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	F16CDC8F09AF20ED0013A434 /* Defaults.plist */ = {
 		uiCtxt = {
@@ -243,6 +244,17 @@
 			sepNavVisRect = "{{0, 1107}, {740, 180}}";
 			sepNavWindowFrame = "{{422, -269}, {1466, 1024}}";
 		};
+	};
+	F1DC013611C91189007662EE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/ikob/Desktop/MIMEfix/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	F1E2BF4809AD748D00DA6872 /* Source Control */ = {
 		isa = PBXSourceControlManager;
