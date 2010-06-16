@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$Revision: 1.6.5 $</string>
+	<string>$Revision: 1.6.6 $</string>
 	<key>NSMainNibFile</key>
 	<string>MIMEfixPreference.nib</string>
 	<key>NSPrincipalClass</key>
@@ -30,6 +30,8 @@
 		<string>99BB3782-6C16-4C6F-B910-25ED1C1CB38B</string>
 		<string>2F0CF6F9-35BA-4812-9CB2-155C0FDB9B0F</string>
 		<string>0CB5F2A0-A173-4809-86E3-9317261F1745</string>
+		<string>B842F7D0-4D81-4DDF-A672-129CA5B32D57</string>
+		<string>E71BD599-351A-42C5-9B63-EA5C47F7CE8E</string>
 	</array>
 </dict>
 </plist>
