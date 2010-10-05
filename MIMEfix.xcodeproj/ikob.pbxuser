@@ -94,15 +94,15 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 298389869;
-			PBXWorkspaceStateSaveDate = 298389869;
+			PBXPerProjectTemplateStateSaveDate = 307937913;
+			PBXWorkspaceStateSaveDate = 307937913;
 		};
 		perUserProjectItems = {
 			F1664B5011C8F18600F8F915 = F1664B5011C8F18600F8F915 /* PBXBookmark */;
 			F1664B5111C8F18C00F8F915 = F1664B5111C8F18C00F8F915 /* PBXBookmark */;
 			F1664B5211C8F18C00F8F915 = F1664B5211C8F18C00F8F915 /* PlistBookmark */;
 			F1664B5811C8F18C00F8F915 = F1664B5811C8F18C00F8F915 /* PlistBookmark */;
-			F1DC013611C91189007662EE /* PlistBookmark */ = F1DC013611C91189007662EE /* PlistBookmark */;
+			F1DC013611C91189007662EE = F1DC013611C91189007662EE /* PlistBookmark */;
 		};
 		sourceControlManager = F1E2BF4809AD748D00DA6872 /* Source Control */;
 		userBuildSettings = {
@@ -176,9 +176,9 @@
 	};
 	F118229209AE984B00EBF3AD /* MIMEPart_FixMime.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1407, 700}}";
+			sepNavIntBoundsRect = "{{0, 0}, {611, 234}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 342}";
+			sepNavVisRange = "{0, 272}";
 			sepNavVisRect = "{{0, 0}, {1427, 699}}";
 			sepNavWindowFrame = "{{1094, 630}, {1466, 828}}";
 		};
@@ -254,7 +254,7 @@
 		);
 		name = /Users/ikob/Desktop/MIMEfix/Info.plist;
 		rLen = 0;
-		rLoc = 9223372036854775807;
+		rLoc = 9223372036854775808;
 	};
 	F1E2BF4809AD748D00DA6872 /* Source Control */ = {
 		isa = PBXSourceControlManager;

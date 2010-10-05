@@ -12,6 +12,8 @@
 #import <Cocoa/Cocoa.h>
 #import <NSPreferences.h>
 
+#define DEBUG 0
+
 @interface MIMEfixPreferences : NSPreferencesModule
 {
     IBOutlet NSTextField	*versionTextField;

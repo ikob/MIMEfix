@@ -208,7 +208,11 @@ out:
 	NSLog(@"DispositionParameterForKey %@:%@.", fp8, src);
 	NSLog(@"MIME type/sub-type:%@/%@.", [self type], [self subtype]);
 #endif
+#if 1
+	if(prefername == YES && [self bodyParameterForKey:@"name"] != NULL){
+#else
 	if(prefername == YES){
+#endif
 		src = [self bodyParameterForKey:@"name"];
 	}
 	if(src == NULL)
