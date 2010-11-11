@@ -17,13 +17,15 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$Revision: 1.6.6 $</string>
+	<string>$Revision: 1.6.7 $</string>
 	<key>NSMainNibFile</key>
 	<string>MIMEfixPreference.nib</string>
 	<key>NSPrincipalClass</key>
 	<string>MIMEfixMailBundle</string>
 	<key>SupportedPluginCompatibilityUUIDs</key>
 	<array>
+		<string>BDD81F4D-6881-4A8D-94A7-E67410089EEB</string>
+		<string>857A142A-AB81-4D99-BECC-D1B55A86D94E</string>
 		<string>225E0A48-2CDB-44A6-8D99-A9BB8AF6BA04</string>
 		<string>B3F3FC72-315D-4323-BE85-7AB76090224D</string>
 		<string>2610F061-32C6-4C6B-B90A-7A3102F9B9C8</string>
