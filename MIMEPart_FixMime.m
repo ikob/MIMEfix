@@ -134,14 +134,14 @@ mime_exit:
 	}
 	tmp = [src substringWithRange:limitrange];
 #ifdef DEBUG
-	NSLog(@"Outside of ISO-2022 %@", tmp);
+	NSLog(@"Outside of ISO-2022 :%@", tmp);
 #endif
 	space = [tmp rangeOfString:@" " ];
 	if(space.location == 0 ){
-		tmp = [tmp substringFromIndex:space.location];
 #ifdef DEBUG
-		NSLog(@"Chop starting space %@", tmp);
+		NSLog(@"Chop starting space :%@", tmp);
 #endif
+		tmp = [tmp substringFromIndex:(space.location + 1)];
 	}
 	dst = [dst stringByAppendingString:tmp];
 	return dst;
