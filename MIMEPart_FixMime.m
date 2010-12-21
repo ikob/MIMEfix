@@ -40,6 +40,7 @@ static char csrc[150], cdst[150];
 #ifdef DEBUG
 		NSLog(@"Outside of MIME :%@:", tmp);
 #endif
+#if 0
 		space = [tmp rangeOfString:@" " options:NSBackwardsSearch];
 		if(space.location == [tmp length] - 1 ){
 			tmp = [tmp substringToIndex:space.location];
@@ -47,14 +48,9 @@ static char csrc[150], cdst[150];
 			NSLog(@"Chop trailing space %@", tmp);
 #endif
 		}
-		space = [tmp rangeOfString:@"\t" options:NSBackwardsSearch];
-		if(space.location == [tmp length] - 1 ){
-			tmp = [tmp substringToIndex:space.location];
-#ifdef DEBUG
-			NSLog(@"Chop trailing space %@", tmp);
+#else
+		tmp = [tmp stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 #endif
-		}
-		
 		dst = [dst stringByAppendingString:tmp];
 #ifdef DEBUG
 		NSLog(@"dst1 :%@:", dst);
