@@ -29,24 +29,35 @@ static char csrc[150], cdst[150];
 	erange = NSMakeRange(0,0);
 	srange = [src rangeOfString:@"=?" options:NSLiteralSearch range:limitrange];
 	while(srange.location != NSNotFound){
+#ifdef DEBUG
+		NSLog(@"dst0 :%@:", dst);
+#endif
 		crange = NSMakeRange(erange.location + erange.length, srange.location - erange.location - erange.length);
 #ifdef DEBUG
 		NSLog(@"Start Founded %@ %@ %@", NSStringFromRange(srange), NSStringFromRange(crange), NSStringFromRange(limitrange));
 #endif
 		tmp = [src substringWithRange:crange];
 #ifdef DEBUG
-		NSLog(@"Outside of MIME %@", tmp);
+		NSLog(@"Outside of MIME :%@:", tmp);
 #endif
 		space = [tmp rangeOfString:@" " options:NSBackwardsSearch];
 		if(space.location == [tmp length] - 1 ){
-		tmp = [tmp substringToIndex:space.location];
+			tmp = [tmp substringToIndex:space.location];
 #ifdef DEBUG
-		NSLog(@"Chop trailing space %@", tmp);
+			NSLog(@"Chop trailing space %@", tmp);
 #endif
 		}
+		space = [tmp rangeOfString:@"\t" options:NSBackwardsSearch];
+		if(space.location == [tmp length] - 1 ){
+			tmp = [tmp substringToIndex:space.location];
+#ifdef DEBUG
+			NSLog(@"Chop trailing space %@", tmp);
+#endif
+		}
+		
 		dst = [dst stringByAppendingString:tmp];
 #ifdef DEBUG
-		NSLog(@"dst %@", dst);
+		NSLog(@"dst1 :%@:", dst);
 #endif
 		limitrange = NSMakeRange(srange.location + srange.length, [src length] - srange.location - srange.length);
 #ifdef DEBUG
@@ -85,14 +96,17 @@ static char csrc[150], cdst[150];
 #endif
 				NSString *mdst = [NSString stringWithCString:cdst encoding:NSISO2022JPStringEncoding];
 #ifdef DEBUG
-				NSLog(@"converted %@", mdst);
+				NSLog(@"converted :%@:", mdst);
 #endif
 				if(mdst != NULL){
+#ifdef DEBUG
+					NSLog(@"append :%@: and :%@:", dst, mdst);
+#endif					
 					modified ++;
 					dst = [dst stringByAppendingString:mdst];
 				}
 #ifdef DEBUG
-				NSLog(@"dst %@", dst);
+				NSLog(@"dst2 :%@:", dst);
 #endif
 			goto mime_exit;
 		}
@@ -120,7 +134,7 @@ static char csrc[150], cdst[150];
 				dst = [dst stringByAppendingString:mdst];
 			}
 #ifdef DEBUG
-			NSLog(@"dst %@", dst);
+			NSLog(@"dst3 :%@:", dst);
 #endif
 			goto mime_exit;
 		}
@@ -128,7 +142,7 @@ static char csrc[150], cdst[150];
 		goto out;
 mime_exit:
 #ifdef DEBUG
-		NSLog(@"dst %@", dst);
+		NSLog(@"dst4 :%@:", dst);
 #endif
 		srange = [src rangeOfString:@"=?" options:NSLiteralSearch range:limitrange];
 	}
