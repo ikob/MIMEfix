@@ -9,7 +9,7 @@
 // $Id: MIMEPart_FixMime.m,v 1.1.1.1 2006-06-20 05:55:37 ikob Exp $
 //
 
-#undef DEBUG
+// #undef DEBUG
 #import "MIMEfixPreferences.h"
 #import "MIMEPart_FixMime.h"
 #import "JMUtilities.h"
