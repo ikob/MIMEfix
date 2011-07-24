@@ -41,8 +41,13 @@ NSBundle *GetMyMVMailBundle(void) {
 	[(NSImage *)[[NSImage alloc] initByReferencingFile:[myBundle pathForImageResource:@"MIMEfix"]] setName:@"MIMEfix"];
 	[self registerBundle];
 #endif
+#ifdef DEBUG
+	NSLog(@"Loaded MIMEfixMailBundle. (DEBUG) %@", [[[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"]
+											stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"$"]]);
+#else
 	NSLog(@"Loaded MIMEfixMailBundle. %@", [[[[NSBundle bundleForClass:[self class]] infoDictionary] objectForKey:@"CFBundleVersion"]
 		stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"$"]]);
+#endif
 #if 0
 	NSDictionary* infoDictionary = [[NSBundle bundleForClass:[self class]] infoDictionary];
 	NSLog(@"%i Keys:  %@", [infoDictionary count], [infoDictionary allKeys]);
