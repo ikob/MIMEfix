@@ -17,7 +17,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>$Revision: 1.7.0.0 $</string>
+	<string>$Revision: ${CURRENT_PROJECT_VERSION} $</string>
 	<key>NSMainNibFile</key>
 	<string>MIMEfixPreference.nib</string>
 	<key>NSPrincipalClass</key>
