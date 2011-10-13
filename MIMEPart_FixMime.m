@@ -13,6 +13,7 @@
 #import "MIMEfixPreferences.h"
 #import "MIMEPart_FixMime.h"
 #import "JMUtilities.h"
+#import "base64.h"
 static IMP _old_dispositionParameterForKey_IMP = NULL;
 static IMP _old_bodyParameterForKey_IMP = NULL;
 static NSString *filename = @"filename";
