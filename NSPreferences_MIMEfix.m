@@ -12,6 +12,7 @@
 #import "NSPreferences_MIMEfix.h"
 #import "MIMEfixPreferences.h"
 #import "MIMEfixbundle.h"
+#import "MVMailBundle.h"
 
 #import <objc/objc-runtime.h>
 

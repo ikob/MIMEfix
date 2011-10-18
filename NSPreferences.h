@@ -207,7 +207,7 @@
 - (void)moduleWasInstalled;
 - (char)moduleCanBeRemoved;
 - (char)preferencesWindowShouldClose;
-- (char)isResizable;
+- (BOOL)isResizable;
 
 @end
 

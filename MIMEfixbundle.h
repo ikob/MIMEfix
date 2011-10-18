@@ -21,5 +21,5 @@
 - (BOOL) isEnabled;
 - (void) setEnabled:(BOOL)flag;
 - (BOOL) isPreferName;
-- (BOOL) setPrefername:(BOOL)flag;
+- (void) setPreferName:(BOOL)flag;
 @end
