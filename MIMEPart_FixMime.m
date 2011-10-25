@@ -191,7 +191,7 @@ out:
 	if(src == NULL)
 		return NULL;
 #endif
-	if([filename caseInsensitiveCompare:(NSString *)fp8] != NSOrderedSame){
+	if(filename != NULL && [filename caseInsensitiveCompare:(NSString *)fp8] != NSOrderedSame){
 			return  (*_old_dispositionParameterForKey_IMP)(self, _cmd, fp8);
 	}
 	if([[NSUserDefaults standardUserDefaults] boolForKey:@"MIMEfixEnable"] == NO){
